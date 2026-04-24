@@ -28879,6 +28879,145 @@
       ]
     },
     {
+      "name": "entities",
+      "description": "Software components, APIs, resources, systems, domains, groups, and users registered in the catalog",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "actions": [
+        "list",
+        "get",
+        "delete",
+        "validate"
+      ],
+      "apis": [
+        "backstage-catalog"
+      ]
+    },
+    {
+      "name": "locations",
+      "description": "Source control or URL references that the catalog ingests entities from",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "actions": [
+        "list",
+        "create",
+        "delete",
+        "get"
+      ],
+      "apis": [
+        "backstage-catalog"
+      ]
+    },
+    {
+      "name": "scaffolder-tasks",
+      "description": "Software template execution tasks for bootstrapping new projects",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "actions": [
+        "create",
+        "get",
+        "cancel",
+        "list-events"
+      ],
+      "apis": [
+        "backstage-scaffolder"
+      ]
+    },
+    {
+      "name": "templates",
+      "description": "Scaffolder software templates defining parameters and steps for project creation",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "actions": [
+        "list",
+        "get-parameter-schema"
+      ],
+      "apis": [
+        "backstage-scaffolder"
+      ]
+    },
+    {
+      "name": "techdocs",
+      "description": "Rendered technical documentation for catalog entities",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "actions": [
+        "get",
+        "sync",
+        "list"
+      ],
+      "apis": [
+        "backstage-techdocs"
+      ]
+    },
+    {
+      "name": "search-results",
+      "description": "Search index results across catalog entities, TechDocs pages, and other content",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "actions": [
+        "query"
+      ],
+      "apis": [
+        "backstage-search"
+      ]
+    },
+    {
+      "name": "permissions",
+      "description": "Authorization decisions for user/service actions within Backstage",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "actions": [
+        "evaluate",
+        "get-metadata"
+      ],
+      "apis": [
+        "backstage-permissions"
+      ]
+    },
+    {
+      "name": "domains",
+      "description": "SaaS backup customer domains with subscription and customer ID information",
+      "provider": "Backupify",
+      "provider_slug": "backupify",
+      "actions": [
+        "list"
+      ],
+      "apis": [
+        "backupify-saas-api"
+      ]
+    },
+    {
+      "name": "seats",
+      "description": "Individual backup seats including users, shared mailboxes, sites, team sites, and teams",
+      "provider": "Backupify",
+      "provider_slug": "backupify",
+      "actions": [
+        "list",
+        "license",
+        "unlicense",
+        "pause"
+      ],
+      "apis": [
+        "backupify-saas-api"
+      ]
+    },
+    {
+      "name": "packages",
+      "description": "Ballerina language packages published to Central registry",
+      "provider": "Ballerina",
+      "provider_slug": "ballerina",
+      "actions": [
+        "search",
+        "get",
+        "get-version",
+        "push"
+      ],
+      "apis": [
+        "ballerina-central"
+      ]
+    },
+    {
       "name": "calls",
       "description": "Voice calls initiated and managed through Bandwidth",
       "provider": "Bandwidth",
@@ -28977,6 +29116,637 @@
       ]
     },
     {
+      "name": "accounts",
+      "description": "CashPro bank accounts for corporate clients",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america",
+      "actions": [
+        "list",
+        "get",
+        "get-balances",
+        "list-transactions"
+      ],
+      "apis": [
+        "bofa-cashpro"
+      ]
+    },
+    {
+      "name": "payments",
+      "description": "Payment transactions across 350+ payment types",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america",
+      "actions": [
+        "initiate",
+        "list",
+        "get",
+        "cancel"
+      ],
+      "apis": [
+        "bofa-cashpro"
+      ]
+    },
+    {
+      "name": "statements",
+      "description": "Monthly account statements",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": [
+        "bofa-cashpro"
+      ]
+    },
+    {
+      "name": "accounts",
+      "description": "BNY Mellon institutional accounts",
+      "provider": "BNY Mellon",
+      "provider_slug": "bank-of-new-york-mellon",
+      "actions": [
+        "list",
+        "get",
+        "get-balances",
+        "list-transactions"
+      ],
+      "apis": [
+        "bny-treasury"
+      ]
+    },
+    {
+      "name": "payments",
+      "description": "Payment transactions via wire, ACH, SWIFT, and CHIPS",
+      "provider": "BNY Mellon",
+      "provider_slug": "bank-of-new-york-mellon",
+      "actions": [
+        "initiate",
+        "list",
+        "get"
+      ],
+      "apis": [
+        "bny-treasury"
+      ]
+    },
+    {
+      "name": "funds-transfers",
+      "description": "Internal account-to-account funds transfers",
+      "provider": "BNY Mellon",
+      "provider_slug": "bank-of-new-york-mellon",
+      "actions": [
+        "initiate",
+        "get"
+      ],
+      "apis": [
+        "bny-treasury"
+      ]
+    },
+    {
+      "name": "cases",
+      "description": "US bankruptcy court cases retrieved via PACER",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch",
+      "actions": [
+        "search",
+        "get",
+        "get-docket"
+      ],
+      "apis": [
+        "bankruptcywatch-pacer"
+      ]
+    },
+    {
+      "name": "claims",
+      "description": "Claims register entries and Proof of Claim filings",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch",
+      "actions": [
+        "list",
+        "file"
+      ],
+      "apis": [
+        "bankruptcywatch-pacer"
+      ]
+    },
+    {
+      "name": "monitors",
+      "description": "Automated bankruptcy monitoring alerts",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch",
+      "actions": [
+        "create",
+        "list",
+        "get",
+        "delete"
+      ],
+      "apis": [
+        "bankruptcywatch-pacer"
+      ]
+    },
+    {
+      "name": "projects",
+      "description": "Basecamp projects (buckets)",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "delete"
+      ],
+      "apis": [
+        "basecamp-api"
+      ]
+    },
+    {
+      "name": "todos",
+      "description": "To-do items within project to-do lists",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "complete"
+      ],
+      "apis": [
+        "basecamp-api"
+      ]
+    },
+    {
+      "name": "messages",
+      "description": "Messages on project message boards",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "delete"
+      ],
+      "apis": [
+        "basecamp-api"
+      ]
+    },
+    {
+      "name": "people",
+      "description": "Account members and project participants",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": [
+        "basecamp-api"
+      ]
+    },
+    {
+      "name": "comments",
+      "description": "Comments on project recordings",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "delete"
+      ],
+      "apis": [
+        "basecamp-api"
+      ]
+    },
+    {
+      "name": "schedule-entries",
+      "description": "Calendar events and schedule entries",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "delete"
+      ],
+      "apis": [
+        "basecamp-api"
+      ]
+    },
+    {
+      "name": "countries",
+      "description": "Country records with geographic, political, and travel metadata",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": [
+        "basetrip-api"
+      ]
+    },
+    {
+      "name": "cities",
+      "description": "City records with geographic and timezone information",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": [
+        "basetrip-api"
+      ]
+    },
+    {
+      "name": "phrases",
+      "description": "Travel phrases for country languages",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "actions": [
+        "list"
+      ],
+      "apis": [
+        "basetrip-api"
+      ]
+    },
+    {
+      "name": "safety",
+      "description": "Safety ratings and travel advisories",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "actions": [
+        "get"
+      ],
+      "apis": [
+        "basetrip-api"
+      ]
+    },
+    {
+      "name": "cost",
+      "description": "Cost of living and travel budget estimates",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "actions": [
+        "get"
+      ],
+      "apis": [
+        "basetrip-api"
+      ]
+    },
+    {
+      "name": "visa",
+      "description": "Visa requirements by passport and destination",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "actions": [
+        "get"
+      ],
+      "apis": [
+        "basetrip-api"
+      ]
+    },
+    {
+      "name": "health",
+      "description": "Health advisories, vaccination requirements, and medical information",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "actions": [
+        "get"
+      ],
+      "apis": [
+        "basetrip-api"
+      ]
+    },
+    {
+      "name": "users",
+      "description": "End consumer records in the Basiq platform",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "actions": [
+        "create",
+        "get",
+        "delete"
+      ],
+      "apis": [
+        "basiq-api"
+      ]
+    },
+    {
+      "name": "connections",
+      "description": "Bank connections linking a user to a financial institution",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "delete"
+      ],
+      "apis": [
+        "basiq-api"
+      ]
+    },
+    {
+      "name": "accounts",
+      "description": "Bank accounts associated with a user's connections",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": [
+        "basiq-api"
+      ]
+    },
+    {
+      "name": "transactions",
+      "description": "Bank transactions across all user accounts",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": [
+        "basiq-api"
+      ]
+    },
+    {
+      "name": "income",
+      "description": "Income verification derived from transaction analysis",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "actions": [
+        "get"
+      ],
+      "apis": [
+        "basiq-api"
+      ]
+    },
+    {
+      "name": "expenses",
+      "description": "Categorized expense reports derived from transaction analysis",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "actions": [
+        "get"
+      ],
+      "apis": [
+        "basiq-api"
+      ]
+    },
+    {
+      "name": "cards",
+      "description": "Hearthstone collectible and uncollectible cards",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "actions": [
+        "search",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "card-backs",
+      "description": "Hearthstone card back cosmetics",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "actions": [
+        "search",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "decks",
+      "description": "Hearthstone deck definitions encoded as deck codes",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "metadata",
+      "description": "Hearthstone reference data including sets, classes, types, rarities, keywords",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "characters",
+      "description": "World of Warcraft player character profiles",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "realms",
+      "description": "World of Warcraft realm (server) data",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "seasons",
+      "description": "Diablo III season data and leaderboards",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "profiles",
+      "description": "StarCraft II player profile data",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "leagues",
+      "description": "StarCraft II league data",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "products",
+      "description": "",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "stores",
+      "description": "",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "recommendations",
+      "description": "",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy",
+      "actions": [
+        "trending",
+        "most-viewed",
+        "also-viewed",
+        "also-bought"
+      ],
+      "apis": []
+    },
+    {
+      "name": "wallet",
+      "description": "",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions",
+      "actions": [
+        "deposit",
+        "withdraw",
+        "get-balance",
+        "authenticate"
+      ],
+      "apis": []
+    },
+    {
+      "name": "games",
+      "description": "",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "players",
+      "description": "",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "monitors",
+      "description": "Uptime monitors that check URLs, APIs, and services for availability",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "heartbeats",
+      "description": "Heartbeat monitors for scheduled jobs and cron task health checks",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "incidents",
+      "description": "Infrastructure incidents triggered by monitor or heartbeat failures",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "acknowledge",
+        "resolve",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "status-pages",
+      "description": "Public and private status pages for communicating service health",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "escalation-policies",
+      "description": "Escalation policies defining notification sequences for on-call",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "team-members",
+      "description": "Team members and pending invitations",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "actions": [
+        "list",
+        "invite",
+        "get",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
       "name": "users",
       "description": "Users discovered and managed across SaaS applications",
       "provider": "BetterCloud",
@@ -29036,6 +29806,109 @@
       "provider_slug": "bettercloud",
       "actions": [
         "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "requests",
+      "description": "Just-in-time privileged access requests",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "update",
+        "delete",
+        "get-credentials"
+      ],
+      "apis": []
+    },
+    {
+      "name": "managed-accounts",
+      "description": "Privileged accounts managed by Password Safe",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "managed-systems",
+      "description": "Systems registered in Password Safe",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "secrets",
+      "description": "Secrets stored in Secrets Safe",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust",
+      "actions": [
+        "list",
+        "create",
+        "get",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "monitors",
+      "description": "Monitor metric categories for observability",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "reload-entries",
+      "description": "Configuration reload entries",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe",
+      "actions": [
+        "list",
+        "reload"
+      ],
+      "apis": []
+    },
+    {
+      "name": "debug",
+      "description": "Go pprof debugging endpoints",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe",
+      "actions": [
+        "profile",
+        "trace",
+        "cmdline"
+      ],
+      "apis": []
+    },
+    {
+      "name": "chat-completions",
+      "description": "Chat completion requests routed to AI providers",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost",
+      "actions": [
+        "create",
+        "stream"
+      ],
+      "apis": []
+    },
+    {
+      "name": "health",
+      "description": "Gateway health and provider status",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost",
+      "actions": [
+        "get"
       ],
       "apis": []
     },
@@ -29200,6 +30073,154 @@
       "apis": []
     },
     {
+      "name": "orders",
+      "description": "Spot trading orders",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "actions": [
+        "list",
+        "get",
+        "create",
+        "cancel"
+      ],
+      "apis": []
+    },
+    {
+      "name": "account",
+      "description": "Account balances and information",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "trades",
+      "description": "Trade history",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "ticker",
+      "description": "Market price ticker data",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "depth",
+      "description": "Order book depth data",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "withdrawals",
+      "description": "Cryptocurrency withdrawals",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "actions": [
+        "list",
+        "create"
+      ],
+      "apis": []
+    },
+    {
+      "name": "deposits",
+      "description": "Cryptocurrency deposits",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "employees",
+      "description": "Normalized employee records from connected HRIS systems",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "departments",
+      "description": "Organizational departments from connected HRIS systems",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "time-off",
+      "description": "Employee time-off requests and balances",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "jobs",
+      "description": "Job postings from connected ATS systems",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "candidates",
+      "description": "Job candidates from connected ATS systems",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "services",
+      "description": "Available Biogen API services",
+      "provider": "Biogen",
+      "provider_slug": "biogen",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "api-keys",
+      "description": "Developer API keys and usage stats",
+      "provider": "Biogen",
+      "provider_slug": "biogen",
+      "actions": [
+        "list",
+        "create"
+      ],
+      "apis": []
+    },
+    {
       "name": "repositories",
       "description": "",
       "provider": "Bitbucket",
@@ -29349,6 +30370,248 @@
       "apis": [
         "cloud-rest-api"
       ]
+    },
+    {
+      "name": "companies",
+      "description": "Business entity records with firmographic data",
+      "provider": "BizAPI",
+      "provider_slug": "bizapi",
+      "actions": [
+        "search",
+        "search-test"
+      ],
+      "apis": []
+    },
+    {
+      "name": "routes",
+      "description": "Available coach routes between station pairs",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "trips",
+      "description": "Specific coach departures with pricing and availability",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "actions": [
+        "search"
+      ],
+      "apis": []
+    },
+    {
+      "name": "bookings",
+      "description": "Coach booking records for passengers",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "actions": [
+        "create",
+        "get",
+        "cancel"
+      ],
+      "apis": []
+    },
+    {
+      "name": "tickets",
+      "description": "Electronic tickets with QR codes for passengers",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "stations",
+      "description": "Coach stations in the BlaBlaCar Bus network",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "products",
+      "description": "Software product catalog entries with attributes, features, and pricing",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "vendors",
+      "description": "Software vendors and their product portfolios",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "actions": [
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "pricing",
+      "description": "Pricing benchmarks and negotiation guidance",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "actions": [
+        "get-insights"
+      ],
+      "apis": []
+    },
+    {
+      "name": "webhooks",
+      "description": "Event webhook subscriptions",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "actions": [
+        "list",
+        "create"
+      ],
+      "apis": []
+    },
+    {
+      "name": "blocks",
+      "description": "Cardano blockchain block data",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "actions": [
+        "get",
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "transactions",
+      "description": "Cardano transaction data and submission",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "actions": [
+        "get",
+        "submit"
+      ],
+      "apis": []
+    },
+    {
+      "name": "accounts",
+      "description": "Cardano stake account data",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "addresses",
+      "description": "Cardano address UTXOs and balances",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "assets",
+      "description": "Cardano native assets (fungible and NFT)",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "actions": [
+        "get",
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "epochs",
+      "description": "Cardano epoch data and protocol parameters",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "governance",
+      "description": "Cardano governance proposals and DRep data",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "actions": [
+        "get",
+        "list"
+      ],
+      "apis": []
+    },
+    {
+      "name": "securities",
+      "description": "Financial instruments and securities.",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "actions": [
+        "get",
+        "search"
+      ],
+      "apis": []
+    },
+    {
+      "name": "market-data",
+      "description": "Real-time and historical pricing.",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "actions": [
+        "subscribe",
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "reference-data",
+      "description": "Static security attributes and fundamentals.",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "research-reports",
+      "description": "Analyst research and intelligence.",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "actions": [
+        "get",
+        "search"
+      ],
+      "apis": []
+    },
+    {
+      "name": "corporate-actions",
+      "description": "Dividends, splits, and other corporate events.",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
+      "name": "esg-data",
+      "description": "ESG scores and sustainability metrics.",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "actions": [
+        "get"
+      ],
+      "apis": []
     },
     {
       "name": "POS Data",
@@ -34238,11 +35501,31 @@
         "Azure Synapse Analytics",
         "Azure DevTest Labs",
         "Backblaze",
+        "Backstage",
+        "Backupify",
         "Bandwidth",
+        "Bank of America",
+        "BNY Mellon",
+        "BankruptcyWatch",
+        "Basecamp",
+        "Basetrip",
+        "Basiq",
+        "Battle.net",
+        "Best Buy",
+        "BetSolutions",
+        "Better Stack",
         "BetterCloud",
+        "BeyondTrust",
+        "BFE (Beyond Front End)",
         "BigCommerce",
         "BigPanda",
+        "Binance",
+        "Bindbee",
+        "Biogen",
         "Bitbucket",
+        "BlaBlaCar Bus API",
+        "Blissfully (Vendr)",
+        "Blockfrost",
         "Circana",
         "Cisco",
         "SAP Concur",
@@ -34504,11 +35787,31 @@
         "Azure Synapse Analytics",
         "Azure DevTest Labs",
         "Backblaze",
+        "Backstage",
+        "Ballerina",
         "Bandwidth",
+        "Bank of America",
+        "BNY Mellon",
+        "BankruptcyWatch",
+        "Basecamp",
+        "Basetrip",
+        "Basiq",
+        "Battle.net",
+        "Best Buy",
+        "BetSolutions",
+        "Better Stack",
         "BetterCloud",
+        "BeyondTrust",
+        "BFE (Beyond Front End)",
+        "Bifrost",
         "BigCommerce",
         "BigPanda",
+        "Binance",
+        "Bindbee",
         "Bitbucket",
+        "BlaBlaCar Bus API",
+        "Blissfully (Vendr)",
+        "Blockfrost",
         "Circana",
         "Cisco",
         "SAP Concur",
@@ -34793,11 +36096,22 @@
         "Azure Synapse Analytics",
         "Azure DevTest Labs",
         "Backblaze",
+        "Backstage",
         "Bandwidth",
+        "BankruptcyWatch",
+        "Basecamp",
+        "Basiq",
+        "Better Stack",
         "BetterCloud",
+        "BeyondTrust",
+        "Bifrost",
         "BigCommerce",
         "BigPanda",
+        "Binance",
+        "Biogen",
         "Bitbucket",
+        "BlaBlaCar Bus API",
+        "Blissfully (Vendr)",
         "Circana",
         "Cisco",
         "SAP Concur",
@@ -35010,7 +36324,10 @@
         "Azure DevTest Labs",
         "Backblaze",
         "Bandwidth",
+        "Basecamp",
+        "Better Stack",
         "BetterCloud",
+        "BeyondTrust",
         "BigCommerce",
         "Bitbucket",
         "Cisco",
@@ -35257,8 +36574,14 @@
         "Azure Synapse Analytics",
         "Azure DevTest Labs",
         "Backblaze",
+        "Backstage",
         "Bandwidth",
+        "BankruptcyWatch",
+        "Basecamp",
+        "Basiq",
+        "Better Stack",
         "BetterCloud",
+        "BeyondTrust",
         "BigCommerce",
         "BigPanda",
         "Bitbucket",
@@ -35295,6 +36618,7 @@
         "Apache Curator",
         "Apache Doris",
         "Apache Nutch",
+        "Backstage",
         "Google Analytics",
         "Palo Alto Networks",
         "Salesforce Automation"
@@ -35323,7 +36647,8 @@
       "description": "Evaluate visitor context and return campaign/flag decisions",
       "providers": [
         "AB Tasty",
-        "AI Habitat"
+        "AI Habitat",
+        "Backstage"
       ]
     },
     {
@@ -35351,7 +36676,8 @@
       "providers": [
         "AB Tasty",
         "Apache Doris",
-        "AWS App Runner"
+        "AWS App Runner",
+        "Backupify"
       ]
     },
     {
@@ -35393,7 +36719,8 @@
       "description": "Invite a new member to the organization",
       "providers": [
         "Abacus",
-        "Amazon GuardDuty"
+        "Amazon GuardDuty",
+        "Better Stack"
       ]
     },
     {
@@ -35450,6 +36777,7 @@
         "APIIDA",
         "APIs.json",
         "Argo CD",
+        "Backstage",
         "Google Analytics"
       ]
     },
@@ -35591,6 +36919,7 @@
         "Ariba Sourcing",
         "Availity",
         "Avalara",
+        "Blockfrost",
         "SAP Concur",
         "Palo Alto Networks",
         "Salesforce Automation"
@@ -35651,7 +36980,12 @@
         "APIs.io",
         "Ariba Guided Buying",
         "Availity",
+        "Ballerina",
         "Bandwidth",
+        "BankruptcyWatch",
+        "Battle.net",
+        "BizAPI",
+        "BlaBlaCar Bus API",
         "Google Analytics",
         "Microsoft Word",
         "Palo Alto Networks",
@@ -35726,7 +37060,8 @@
         "Ansible",
         "Ansible Playbooks",
         "Argo",
-        "Argo CD"
+        "Argo CD",
+        "Backstage"
       ]
     },
     {
@@ -36235,6 +37570,10 @@
         "Apache Kylin",
         "AT&T",
         "Backblaze",
+        "Backstage",
+        "Bank of America",
+        "Binance",
+        "BlaBlaCar Bus API",
         "Microsoft Power Automate",
         "Teradata"
       ]
@@ -37093,7 +38432,8 @@
       "description": "",
       "providers": [
         "Amazon EC2 Auto Scaling",
-        "Appmixer"
+        "Appmixer",
+        "Basecamp"
       ]
     },
     {
@@ -37569,6 +38909,7 @@
       "description": "Acknowledge an active anomaly alert to indicate it has been reviewed.",
       "providers": [
         "Anomaly Detection",
+        "Better Stack",
         "Google Analytics",
         "Veritas InfoScale"
       ]
@@ -37581,7 +38922,8 @@
       "providers": [
         "Anomaly Detection",
         "Apache Ant",
-        "Avalara"
+        "Avalara",
+        "Better Stack"
       ]
     },
     {
@@ -38737,7 +40079,8 @@
       "pattern": "write",
       "description": "File a tax return or form",
       "providers": [
-        "Avalara"
+        "Avalara",
+        "BankruptcyWatch"
       ]
     },
     {
@@ -38823,12 +40166,197 @@
       ]
     },
     {
+      "name": "license",
+      "verb": "",
+      "pattern": "write",
+      "description": "Enable backup protection for a seat",
+      "providers": [
+        "Backupify"
+      ]
+    },
+    {
+      "name": "unlicense",
+      "verb": "",
+      "pattern": "write",
+      "description": "Remove backup protection from a seat",
+      "providers": [
+        "Backupify"
+      ]
+    },
+    {
+      "name": "get-version",
+      "verb": "",
+      "pattern": "read",
+      "description": "Retrieve a specific version of a package",
+      "providers": [
+        "Ballerina"
+      ]
+    },
+    {
+      "name": "push",
+      "verb": "",
+      "pattern": "write",
+      "description": "Publish a new package or version to Central",
+      "providers": [
+        "Ballerina",
+        "Palo Alto Networks"
+      ]
+    },
+    {
+      "name": "get-balances",
+      "verb": "",
+      "pattern": "read",
+      "description": "Retrieve current account balances",
+      "providers": [
+        "Bank of America",
+        "BNY Mellon"
+      ]
+    },
+    {
+      "name": "list-transactions",
+      "verb": "",
+      "pattern": "read",
+      "description": "List account transaction history",
+      "providers": [
+        "Bank of America",
+        "BNY Mellon"
+      ]
+    },
+    {
+      "name": "initiate",
+      "verb": "",
+      "pattern": "write",
+      "description": "Initiate a new payment transaction",
+      "providers": [
+        "Bank of America",
+        "BNY Mellon"
+      ]
+    },
+    {
+      "name": "get-docket",
+      "verb": "",
+      "pattern": "read",
+      "description": "Retrieve case docket entries",
+      "providers": [
+        "BankruptcyWatch"
+      ]
+    },
+    {
+      "name": "trending",
+      "verb": "",
+      "pattern": "query",
+      "description": "",
+      "providers": [
+        "Best Buy"
+      ]
+    },
+    {
+      "name": "most-viewed",
+      "verb": "",
+      "pattern": "query",
+      "description": "",
+      "providers": [
+        "Best Buy"
+      ]
+    },
+    {
+      "name": "also-viewed",
+      "verb": "",
+      "pattern": "query",
+      "description": "",
+      "providers": [
+        "Best Buy"
+      ]
+    },
+    {
+      "name": "also-bought",
+      "verb": "",
+      "pattern": "query",
+      "description": "",
+      "providers": [
+        "Best Buy"
+      ]
+    },
+    {
+      "name": "deposit",
+      "verb": "",
+      "pattern": "write",
+      "description": "",
+      "providers": [
+        "BetSolutions"
+      ]
+    },
+    {
+      "name": "withdraw",
+      "verb": "",
+      "pattern": "write",
+      "description": "",
+      "providers": [
+        "BetSolutions"
+      ]
+    },
+    {
+      "name": "get-balance",
+      "verb": "",
+      "pattern": "read",
+      "description": "",
+      "providers": [
+        "BetSolutions"
+      ]
+    },
+    {
+      "name": "authenticate",
+      "verb": "",
+      "pattern": "read",
+      "description": "",
+      "providers": [
+        "BetSolutions"
+      ]
+    },
+    {
       "name": "deprovision",
       "verb": "",
       "pattern": "destructive",
       "description": "Remove all user SaaS access",
       "providers": [
         "BetterCloud"
+      ]
+    },
+    {
+      "name": "get-credentials",
+      "verb": "",
+      "pattern": "read",
+      "description": "Retrieve credentials for an approved request",
+      "providers": [
+        "BeyondTrust"
+      ]
+    },
+    {
+      "name": "reload",
+      "verb": "",
+      "pattern": "write",
+      "description": "Triggers a configuration reload",
+      "providers": [
+        "BFE (Beyond Front End)"
+      ]
+    },
+    {
+      "name": "profile",
+      "verb": "",
+      "pattern": "read",
+      "description": "Generates a profiling report",
+      "providers": [
+        "BFE (Beyond Front End)"
+      ]
+    },
+    {
+      "name": "stream",
+      "verb": "",
+      "pattern": "write",
+      "description": "Creates a streaming SSE response",
+      "providers": [
+        "Bifrost",
+        "X (Twitter)"
       ]
     },
     {
@@ -38847,6 +40375,24 @@
       "description": "",
       "providers": [
         "Bitbucket"
+      ]
+    },
+    {
+      "name": "search-test",
+      "verb": "",
+      "pattern": "query",
+      "description": "Submit a test company search returning fake data without consuming credits",
+      "providers": [
+        "BizAPI"
+      ]
+    },
+    {
+      "name": "get-insights",
+      "verb": "",
+      "pattern": "query",
+      "description": "Request pricing intelligence for a product",
+      "providers": [
+        "Blissfully (Vendr)"
       ]
     },
     {
@@ -39081,24 +40627,6 @@
       "description": "Reopen a previously dismissed alert.",
       "providers": [
         "Palo Alto Networks"
-      ]
-    },
-    {
-      "name": "push",
-      "verb": "POST",
-      "pattern": "write",
-      "description": "Push candidate configuration to running config.",
-      "providers": [
-        "Palo Alto Networks"
-      ]
-    },
-    {
-      "name": "stream",
-      "verb": "GET",
-      "pattern": "read",
-      "description": "Open a persistent connection for real-time data delivery.",
-      "providers": [
-        "X (Twitter)"
       ]
     },
     {
@@ -47289,6 +48817,66 @@
       ]
     },
     {
+      "id": "platform-engineer",
+      "name": "Platform Engineer",
+      "description": "Engineer building and maintaining the internal developer platform and Backstage configuration",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "workflows": [
+        "Developer Portal"
+      ]
+    },
+    {
+      "id": "developer",
+      "name": "Developer",
+      "description": "Software developer using Backstage to discover services, bootstrap projects, and read documentation",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "workflows": [
+        "Developer Portal"
+      ]
+    },
+    {
+      "id": "msp-technician",
+      "name": "MSP Technician",
+      "description": "Managed service provider technician managing backup coverage across customer accounts",
+      "provider": "Backupify",
+      "provider_slug": "backupify",
+      "workflows": [
+        "SaaS Backup Management"
+      ]
+    },
+    {
+      "id": "it-administrator",
+      "name": "IT Administrator",
+      "description": "Enterprise IT admin managing backup seat coverage for Microsoft 365 or Google Workspace",
+      "provider": "Backupify",
+      "provider_slug": "backupify",
+      "workflows": [
+        "SaaS Backup Management"
+      ]
+    },
+    {
+      "id": "ballerina-developer",
+      "name": "Ballerina Developer",
+      "description": "Developer building integration services using the Ballerina language",
+      "provider": "Ballerina",
+      "provider_slug": "ballerina",
+      "workflows": [
+        "Package Registry"
+      ]
+    },
+    {
+      "id": "integration-engineer",
+      "name": "Integration Engineer",
+      "description": "Engineer building enterprise integrations using Ballerina language packages",
+      "provider": "Ballerina",
+      "provider_slug": "ballerina",
+      "workflows": [
+        "Package Registry"
+      ]
+    },
+    {
       "id": "application-developer",
       "name": "Application Developer",
       "description": "Developer building communication-enabled web or mobile applications",
@@ -47319,6 +48907,270 @@
       ]
     },
     {
+      "id": "corporate-treasurer",
+      "name": "Corporate Treasurer",
+      "description": "Executive responsible for corporate cash and liquidity management",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america",
+      "workflows": [
+        "Treasury Banking"
+      ]
+    },
+    {
+      "id": "treasury-analyst",
+      "name": "Treasury Analyst",
+      "description": "Analyst managing day-to-day treasury operations and reporting",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america",
+      "workflows": [
+        "Treasury Banking"
+      ]
+    },
+    {
+      "id": "erp-integration",
+      "name": "ERP Integration",
+      "description": "System integration connecting ERP/TMS to Bank of America CashPro APIs",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america",
+      "workflows": [
+        "Treasury Banking"
+      ]
+    },
+    {
+      "id": "corporate-treasurer",
+      "name": "Corporate Treasurer",
+      "description": "Executive managing corporate liquidity and treasury operations",
+      "provider": "BNY Mellon",
+      "provider_slug": "bank-of-new-york-mellon",
+      "workflows": [
+        "Treasury Operations"
+      ]
+    },
+    {
+      "id": "treasury-analyst",
+      "name": "Treasury Analyst",
+      "description": "Analyst executing treasury transactions and reporting",
+      "provider": "BNY Mellon",
+      "provider_slug": "bank-of-new-york-mellon",
+      "workflows": [
+        "Treasury Operations"
+      ]
+    },
+    {
+      "id": "institutional-client",
+      "name": "Institutional Client",
+      "description": "Institutional investor or fund manager using BNY custody and treasury services",
+      "provider": "BNY Mellon",
+      "provider_slug": "bank-of-new-york-mellon",
+      "workflows": [
+        "Treasury Operations"
+      ]
+    },
+    {
+      "id": "creditor",
+      "name": "Creditor",
+      "description": "Business or individual owed money by a bankruptcy filer",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch",
+      "workflows": [
+        "Bankruptcy Monitoring"
+      ]
+    },
+    {
+      "id": "loan-officer",
+      "name": "Loan Officer",
+      "description": "Lender monitoring borrowers for bankruptcy filings",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch",
+      "workflows": [
+        "Bankruptcy Monitoring"
+      ]
+    },
+    {
+      "id": "bankruptcy-attorney",
+      "name": "Bankruptcy Attorney",
+      "description": "Attorney managing creditor representation in bankruptcy proceedings",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch",
+      "workflows": [
+        "Bankruptcy Monitoring"
+      ]
+    },
+    {
+      "id": "project-manager",
+      "name": "Project Manager",
+      "description": "Manager overseeing project progress, tasks, and team communication",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "workflows": [
+        "Project Management"
+      ]
+    },
+    {
+      "id": "team-member",
+      "name": "Team Member",
+      "description": "Individual contributor managing tasks and collaborating on projects",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "workflows": [
+        "Project Management"
+      ]
+    },
+    {
+      "id": "developer",
+      "name": "Developer",
+      "description": "Developer integrating Basecamp into custom workflows and tools",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "workflows": [
+        "Project Management"
+      ]
+    },
+    {
+      "id": "travel-app-developer",
+      "name": "Travel App Developer",
+      "description": "Developer building travel booking or trip planning apps",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "workflows": [
+        "Travel Intelligence"
+      ]
+    },
+    {
+      "id": "trip-planner",
+      "name": "Trip Planner",
+      "description": "Individual or business planning international travel",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "workflows": [
+        "Travel Intelligence"
+      ]
+    },
+    {
+      "id": "travel-content-publisher",
+      "name": "Travel Content Publisher",
+      "description": "Content creator embedding destination guides with live data",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "workflows": [
+        "Travel Intelligence"
+      ]
+    },
+    {
+      "id": "fintech-developer",
+      "name": "Fintech Developer",
+      "description": "Developer building financial apps leveraging open banking data",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "workflows": [
+        "Open Banking"
+      ]
+    },
+    {
+      "id": "lender",
+      "name": "Lender",
+      "description": "Lender using bank data for income verification and affordability assessment",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "workflows": [
+        "Open Banking"
+      ]
+    },
+    {
+      "id": "financial-planner",
+      "name": "Financial Planner",
+      "description": "Financial advisor using transaction data for budgeting and planning",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "workflows": [
+        "Open Banking"
+      ]
+    },
+    {
+      "id": "game-developer",
+      "name": "Game Developer",
+      "description": "Developers building companion apps, stat trackers, or tools for Blizzard games",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "workflows": []
+    },
+    {
+      "id": "hearthstone-player",
+      "name": "Hearthstone Player",
+      "description": "Players using deck-building tools and card databases",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "workflows": []
+    },
+    {
+      "id": "wow-player",
+      "name": "World of Warcraft Player",
+      "description": "Players tracking character progress, gear, and achievements",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "workflows": []
+    },
+    {
+      "id": "developer",
+      "name": "Developer",
+      "description": "Developer building retail integrations and shopping applications",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy",
+      "workflows": [
+        "Retail Discovery"
+      ]
+    },
+    {
+      "id": "partner",
+      "name": "Partner",
+      "description": "Authorized Best Buy commerce partner building shopping experiences",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy",
+      "workflows": [
+        "Retail Discovery"
+      ]
+    },
+    {
+      "id": "casino-operator",
+      "name": "Casino Operator",
+      "description": "Online casino operator integrating BetSolutions into their gaming platform",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions",
+      "workflows": [
+        "Casino Platform"
+      ]
+    },
+    {
+      "id": "platform-developer",
+      "name": "Platform Developer",
+      "description": "Developer building casino platform features using the BetSolutions API",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions",
+      "workflows": [
+        "Casino Platform"
+      ]
+    },
+    {
+      "id": "sre-engineer",
+      "name": "SRE Engineer",
+      "description": "Site Reliability Engineer managing infrastructure uptime and incident response",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "workflows": [
+        "Incident Response"
+      ]
+    },
+    {
+      "id": "on-call-engineer",
+      "name": "On-Call Engineer",
+      "description": "Engineer on-call rotation responsible for responding to incidents",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "workflows": [
+        "Incident Response"
+      ]
+    },
+    {
       "id": "it-administrator",
       "name": "IT Administrator",
       "description": "IT admin managing SaaS access and user lifecycle",
@@ -47336,6 +49188,54 @@
       "provider_slug": "bettercloud",
       "workflows": [
         "SaaS Lifecycle Management"
+      ]
+    },
+    {
+      "id": "security-engineer",
+      "name": "Security Engineer",
+      "description": "Security team member managing privileged access policies and requests",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust",
+      "workflows": [
+        "Privileged Access Management"
+      ]
+    },
+    {
+      "id": "devops-engineer",
+      "name": "DevOps Engineer",
+      "description": "DevOps engineer retrieving secrets and credentials for CI/CD pipelines",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust",
+      "workflows": [
+        "Privileged Access Management"
+      ]
+    },
+    {
+      "id": "platform-engineer",
+      "name": "Platform Engineer",
+      "description": "Engineer managing BFE load balancer deployments and configuration",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe",
+      "workflows": []
+    },
+    {
+      "id": "ai-engineer",
+      "name": "AI Engineer",
+      "description": "Engineer building AI applications using Bifrost as a unified gateway",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost",
+      "workflows": [
+        "ai-chat-routing"
+      ]
+    },
+    {
+      "id": "platform-engineer",
+      "name": "Platform Engineer",
+      "description": "Engineer managing Bifrost gateway deployments and provider config",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost",
+      "workflows": [
+        "ai-chat-routing"
       ]
     },
     {
@@ -47379,6 +49279,56 @@
       ]
     },
     {
+      "id": "trader",
+      "name": "Trader",
+      "description": "Cryptocurrency trader executing spot orders on Binance",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "workflows": [
+        "spot-trading"
+      ]
+    },
+    {
+      "id": "quant-developer",
+      "name": "Quant Developer",
+      "description": "Developer building algorithmic trading strategies on Binance",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "workflows": [
+        "spot-trading"
+      ]
+    },
+    {
+      "id": "hr-developer",
+      "name": "HR Developer",
+      "description": "Developer building HR workflow automations using unified HR data",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "workflows": [
+        "hr-integration"
+      ]
+    },
+    {
+      "id": "people-ops-engineer",
+      "name": "People Ops Engineer",
+      "description": "People operations engineer integrating HR systems into internal tooling",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "workflows": [
+        "hr-integration"
+      ]
+    },
+    {
+      "id": "developer",
+      "name": "Developer",
+      "description": "Developer integrating with Biogen pharmaceutical services APIs",
+      "provider": "Biogen",
+      "provider_slug": "biogen",
+      "workflows": [
+        "api-access-management"
+      ]
+    },
+    {
       "id": "developer",
       "name": "Developer",
       "description": "Writes code, creates pull requests, and reviews code",
@@ -47397,6 +49347,196 @@
       "workflows": [
         "Code Collaboration"
       ]
+    },
+    {
+      "id": "sales-representative",
+      "name": "Sales Representative",
+      "description": "Uses firmographic data to qualify leads and enrich CRM account records",
+      "provider": "BizAPI",
+      "provider_slug": "bizapi",
+      "workflows": [
+        "BizAPI Business Intelligence"
+      ]
+    },
+    {
+      "id": "marketing-analyst",
+      "name": "Marketing Analyst",
+      "description": "Segments and scores prospects using NAICS, SIC, and financial data",
+      "provider": "BizAPI",
+      "provider_slug": "bizapi",
+      "workflows": [
+        "BizAPI Business Intelligence"
+      ]
+    },
+    {
+      "id": "data-engineer",
+      "name": "Data Engineer",
+      "description": "Integrates BizAPI into data pipelines for CRM and data warehouse enrichment",
+      "provider": "BizAPI",
+      "provider_slug": "bizapi",
+      "workflows": [
+        "BizAPI Business Intelligence"
+      ]
+    },
+    {
+      "id": "travel-agent",
+      "name": "Travel Agent",
+      "description": "Books coach tickets for customers as part of multi-modal travel itineraries",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "workflows": [
+        "BlaBlaCar Bus Booking"
+      ]
+    },
+    {
+      "id": "corporate-travel-manager",
+      "name": "Corporate Travel Manager",
+      "description": "Books affordable intercity coach travel for business travelers",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "workflows": [
+        "BlaBlaCar Bus Booking"
+      ]
+    },
+    {
+      "id": "ota-developer",
+      "name": "OTA Developer",
+      "description": "Integrates BlaBlaCar Bus into travel booking platforms and aggregators",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "workflows": [
+        "BlaBlaCar Bus Booking"
+      ]
+    },
+    {
+      "id": "traveler",
+      "name": "Traveler",
+      "description": "Books and manages coach trips via partner platforms",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "workflows": [
+        "BlaBlaCar Bus Booking"
+      ]
+    },
+    {
+      "id": "procurement-manager",
+      "name": "Procurement Manager",
+      "description": "Researches software options, benchmarks pricing, and negotiates with vendors",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "workflows": [
+        "Blissfully SaaS Procurement"
+      ]
+    },
+    {
+      "id": "it-manager",
+      "name": "IT Manager",
+      "description": "Evaluates software capabilities and manages the SaaS portfolio",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "workflows": [
+        "Blissfully SaaS Procurement"
+      ]
+    },
+    {
+      "id": "finance-analyst",
+      "name": "Finance Analyst",
+      "description": "Analyzes SaaS spend, benchmarks costs, and identifies savings opportunities",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "workflows": [
+        "Blissfully SaaS Procurement"
+      ]
+    },
+    {
+      "id": "ai-assistant",
+      "name": "AI Assistant",
+      "description": "Provides AI-assisted procurement recommendations via MCP integration",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "workflows": [
+        "Blissfully SaaS Procurement"
+      ]
+    },
+    {
+      "id": "dapp-developer",
+      "name": "dApp Developer",
+      "description": "Builds decentralized applications on Cardano using blockchain data and transaction submission",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "workflows": [
+        "Blockfrost Cardano Explorer"
+      ]
+    },
+    {
+      "id": "blockchain-analyst",
+      "name": "Blockchain Analyst",
+      "description": "Analyzes on-chain data including blocks, transactions, and account activity",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "workflows": [
+        "Blockfrost Cardano Explorer"
+      ]
+    },
+    {
+      "id": "nft-creator",
+      "name": "NFT Creator",
+      "description": "Mints and manages Cardano native assets and NFT collections",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "workflows": [
+        "Blockfrost Cardano Explorer"
+      ]
+    },
+    {
+      "id": "defi-user",
+      "name": "DeFi User",
+      "description": "Interacts with Cardano DeFi protocols and monitors address and account activity",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "workflows": [
+        "Blockfrost Cardano Explorer"
+      ]
+    },
+    {
+      "id": "trader",
+      "name": "Trader",
+      "description": "",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "workflows": []
+    },
+    {
+      "id": "quant",
+      "name": "Quantitative Analyst",
+      "description": "",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "workflows": []
+    },
+    {
+      "id": "portfolio-manager",
+      "name": "Portfolio Manager",
+      "description": "",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "workflows": []
+    },
+    {
+      "id": "risk-manager",
+      "name": "Risk Manager",
+      "description": "",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "workflows": []
+    },
+    {
+      "id": "research-analyst",
+      "name": "Research Analyst",
+      "description": "",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "workflows": []
     },
     {
       "id": "brand-manager",
@@ -55305,6 +57445,46 @@
       ]
     },
     {
+      "name": "Software Catalog",
+      "description": "Central inventory of all software components, APIs, and resources",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "resources": [
+        "entities",
+        "locations"
+      ]
+    },
+    {
+      "name": "Developer Productivity",
+      "description": "Scaffolding, documentation, and search to accelerate development",
+      "provider": "Backstage",
+      "provider_slug": "backstage",
+      "resources": [
+        "scaffolder-tasks",
+        "techdocs",
+        "search-results"
+      ]
+    },
+    {
+      "name": "Data Protection",
+      "description": "Cloud-to-cloud backup and recovery for SaaS platforms",
+      "provider": "Backupify",
+      "provider_slug": "backupify",
+      "resources": [
+        "domains",
+        "seats"
+      ]
+    },
+    {
+      "name": "Package Management",
+      "description": "Discovery and retrieval of Ballerina language packages",
+      "provider": "Ballerina",
+      "provider_slug": "ballerina",
+      "resources": [
+        "packages"
+      ]
+    },
+    {
       "name": "Voice",
       "description": "Outbound and inbound voice call management and recording",
       "provider": "Bandwidth",
@@ -55350,6 +57530,253 @@
       ]
     },
     {
+      "name": "Treasury Management",
+      "description": "Corporate cash management, balance reporting, and liquidity",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america",
+      "resources": [
+        "accounts",
+        "statements"
+      ]
+    },
+    {
+      "name": "Payments",
+      "description": "Payment initiation and tracking across 350+ payment types",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america",
+      "resources": [
+        "payments"
+      ]
+    },
+    {
+      "name": "Treasury Management",
+      "description": "Institutional account management and cash positioning",
+      "provider": "BNY Mellon",
+      "provider_slug": "bank-of-new-york-mellon",
+      "resources": [
+        "accounts"
+      ]
+    },
+    {
+      "name": "Payments",
+      "description": "Wire, ACH, SWIFT, and CHIPS payment execution",
+      "provider": "BNY Mellon",
+      "provider_slug": "bank-of-new-york-mellon",
+      "resources": [
+        "payments"
+      ]
+    },
+    {
+      "name": "Cash Management",
+      "description": "Internal funds transfers and liquidity management",
+      "provider": "BNY Mellon",
+      "provider_slug": "bank-of-new-york-mellon",
+      "resources": [
+        "funds-transfers"
+      ]
+    },
+    {
+      "name": "Bankruptcy",
+      "description": "US bankruptcy court cases and proceedings",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch",
+      "resources": [
+        "cases",
+        "claims"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "description": "Automated alerts for bankruptcy filings",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch",
+      "resources": [
+        "monitors"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "description": "Project creation and lifecycle management",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "resources": [
+        "projects"
+      ]
+    },
+    {
+      "name": "Team Collaboration",
+      "description": "To-dos, messages, and team member management",
+      "provider": "Basecamp",
+      "provider_slug": "basecamp",
+      "resources": [
+        "todos",
+        "messages",
+        "people"
+      ]
+    },
+    {
+      "name": "Travel",
+      "description": "Travel planning, booking, and destination information",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "resources": [
+        "countries",
+        "cities",
+        "phrases"
+      ]
+    },
+    {
+      "name": "Safety",
+      "description": "Travel safety ratings and advisories",
+      "provider": "Basetrip",
+      "provider_slug": "basetrip",
+      "resources": [
+        "safety"
+      ]
+    },
+    {
+      "name": "Open Banking",
+      "description": "Consumer-consented access to bank account and transaction data",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "resources": [
+        "users",
+        "connections",
+        "accounts"
+      ]
+    },
+    {
+      "name": "Affordability",
+      "description": "Income verification and expense analysis for lending decisions",
+      "provider": "Basiq",
+      "provider_slug": "basiq",
+      "resources": [
+        "income",
+        "expenses",
+        "transactions"
+      ]
+    },
+    {
+      "name": "Game Data",
+      "description": "Static and dynamic game reference data",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "resources": []
+    },
+    {
+      "name": "Player Profiles",
+      "description": "Authenticated player-specific data",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "resources": []
+    },
+    {
+      "name": "Leaderboards",
+      "description": "Competitive rankings and season data",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "resources": []
+    },
+    {
+      "name": "Authentication",
+      "description": "OAuth token management",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net",
+      "resources": []
+    },
+    {
+      "name": "Product Catalog",
+      "description": "Product search, filtering, and attribute retrieval",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy",
+      "resources": [
+        "products"
+      ]
+    },
+    {
+      "name": "Store Operations",
+      "description": "Store location, hours, and services",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy",
+      "resources": [
+        "stores"
+      ]
+    },
+    {
+      "name": "Personalization",
+      "description": "Behavioral recommendations and trending data",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy",
+      "resources": [
+        "recommendations"
+      ]
+    },
+    {
+      "name": "Wallet Management",
+      "description": "Player fund deposits, withdrawals, and balance operations",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions",
+      "resources": [
+        "wallet"
+      ]
+    },
+    {
+      "name": "Game Catalog",
+      "description": "Available casino games and product metadata",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions",
+      "resources": [
+        "games"
+      ]
+    },
+    {
+      "name": "Player Management",
+      "description": "Player profile and account information",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions",
+      "resources": [
+        "players"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "description": "Uptime and availability monitoring for services and scheduled jobs",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "resources": [
+        "monitors",
+        "heartbeats"
+      ]
+    },
+    {
+      "name": "Incident Management",
+      "description": "Detection, acknowledgement, and resolution of service incidents",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "resources": [
+        "incidents",
+        "escalation-policies"
+      ]
+    },
+    {
+      "name": "Status Communication",
+      "description": "Communicating service health to customers and stakeholders",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "resources": [
+        "status-pages"
+      ]
+    },
+    {
+      "name": "Team Administration",
+      "description": "Managing team access and membership",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack",
+      "resources": [
+        "team-members"
+      ]
+    },
+    {
       "name": "User Lifecycle",
       "description": "Onboarding, management, and offboarding of users across SaaS",
       "provider": "BetterCloud",
@@ -55385,6 +57812,68 @@
       "resources": [
         "integrations"
       ]
+    },
+    {
+      "name": "Privileged Access",
+      "description": "Just-in-time access to privileged accounts on managed systems",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust",
+      "resources": [
+        "requests",
+        "managed-accounts",
+        "managed-systems"
+      ]
+    },
+    {
+      "name": "Secrets Management",
+      "description": "Secure storage and retrieval of secrets and credentials",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust",
+      "resources": [
+        "secrets"
+      ]
+    },
+    {
+      "name": "Traffic Management",
+      "description": "Layer 7 load balancing and traffic routing",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe",
+      "resources": []
+    },
+    {
+      "name": "Observability",
+      "description": "Metrics, logging, and distributed tracing",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe",
+      "resources": []
+    },
+    {
+      "name": "Configuration",
+      "description": "Dynamic configuration management and reload",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe",
+      "resources": []
+    },
+    {
+      "name": "AI Provider Routing",
+      "description": "Unified routing to multiple AI LLM providers",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost",
+      "resources": []
+    },
+    {
+      "name": "Chat Completions",
+      "description": "OpenAI-compatible chat completion interface",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost",
+      "resources": []
+    },
+    {
+      "name": "Gateway Observability",
+      "description": "Health monitoring and provider status tracking",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost",
+      "resources": []
     },
     {
       "name": "Catalog",
@@ -55457,6 +57946,90 @@
       "resources": []
     },
     {
+      "name": "Spot Trading",
+      "description": "Buy and sell cryptocurrency spot pairs on the Binance exchange",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "resources": []
+    },
+    {
+      "name": "Futures Trading",
+      "description": "Trade USD-M and Coin-M perpetual futures contracts",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "resources": []
+    },
+    {
+      "name": "Margin Trading",
+      "description": "Trade on margin with borrowed assets",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "resources": []
+    },
+    {
+      "name": "Market Data",
+      "description": "Real-time and historical price, depth, and trade data",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "resources": []
+    },
+    {
+      "name": "Wallet Operations",
+      "description": "Deposits, withdrawals, and asset management",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "resources": []
+    },
+    {
+      "name": "Account Management",
+      "description": "API key management, account balances, and commission rates",
+      "provider": "Binance",
+      "provider_slug": "binance",
+      "resources": []
+    },
+    {
+      "name": "HRIS Integration",
+      "description": "Unified access to employee data from HRIS platforms",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "resources": []
+    },
+    {
+      "name": "ATS Integration",
+      "description": "Unified access to recruiting data from ATS platforms",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "resources": []
+    },
+    {
+      "name": "Organizational Data",
+      "description": "Department hierarchy and org structure normalization",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "resources": []
+    },
+    {
+      "name": "Workforce Analytics",
+      "description": "Employee time-off, tenure, and workforce data",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee",
+      "resources": []
+    },
+    {
+      "name": "API Management",
+      "description": "API key lifecycle and access management",
+      "provider": "Biogen",
+      "provider_slug": "biogen",
+      "resources": []
+    },
+    {
+      "name": "Service Discovery",
+      "description": "Discovery of available Biogen API services",
+      "provider": "Biogen",
+      "provider_slug": "biogen",
+      "resources": []
+    },
+    {
       "name": "Source Control",
       "description": "Managing Git repositories, branches, and commits",
       "provider": "Bitbucket",
@@ -55484,6 +58057,118 @@
       "resources": [
         "pipelines",
         "deployments"
+      ]
+    },
+    {
+      "name": "Business Intelligence",
+      "description": "Firmographic data retrieval and company lookup",
+      "provider": "BizAPI",
+      "provider_slug": "bizapi",
+      "resources": [
+        "companies"
+      ]
+    },
+    {
+      "name": "CRM Enrichment",
+      "description": "Appending firmographic data to CRM records for sales and marketing",
+      "provider": "BizAPI",
+      "provider_slug": "bizapi",
+      "resources": [
+        "companies"
+      ]
+    },
+    {
+      "name": "Booking",
+      "description": "Creating and managing coach reservations",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "resources": [
+        "bookings",
+        "tickets"
+      ]
+    },
+    {
+      "name": "Transportation",
+      "description": "Route search, trip availability, and station data",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api",
+      "resources": [
+        "routes",
+        "trips",
+        "stations"
+      ]
+    },
+    {
+      "name": "Procurement",
+      "description": "Software purchasing, negotiation, and vendor management",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "resources": [
+        "products",
+        "vendors",
+        "pricing"
+      ]
+    },
+    {
+      "name": "SaaS Management",
+      "description": "Portfolio visibility, spend optimization, and renewal management",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully",
+      "resources": [
+        "webhooks"
+      ]
+    },
+    {
+      "name": "Blockchain",
+      "description": "Core blockchain data and transaction management",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "resources": [
+        "blocks",
+        "transactions",
+        "epochs"
+      ]
+    },
+    {
+      "name": "Web3",
+      "description": "Decentralized identity, assets, and governance",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost",
+      "resources": [
+        "accounts",
+        "addresses",
+        "assets",
+        "governance"
+      ]
+    },
+    {
+      "name": "market-data",
+      "description": "",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "resources": [
+        "securities",
+        "market-data"
+      ]
+    },
+    {
+      "name": "reference-data",
+      "description": "",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "resources": [
+        "reference-data",
+        "corporate-actions"
+      ]
+    },
+    {
+      "name": "research",
+      "description": "",
+      "provider": "Bloomberg Intelligence",
+      "provider_slug": "bloomberg-intelligence",
+      "resources": [
+        "research-reports",
+        "esg-data"
       ]
     },
     {
@@ -64538,6 +67223,48 @@
       "provider_slug": "backblaze"
     },
     {
+      "name": "Entity",
+      "description": "A software catalog entity (Component, API, Resource, System, Domain, Group, User)",
+      "category": "core",
+      "provider": "Backstage",
+      "provider_slug": "backstage"
+    },
+    {
+      "name": "EntityMeta",
+      "description": "Entity metadata including name, namespace, labels, and annotations",
+      "category": "core",
+      "provider": "Backstage",
+      "provider_slug": "backstage"
+    },
+    {
+      "name": "Location",
+      "description": "A catalog source location pointing to entity descriptor files",
+      "category": "core",
+      "provider": "Backstage",
+      "provider_slug": "backstage"
+    },
+    {
+      "name": "Domain",
+      "description": "A SaaS backup customer domain",
+      "category": "core",
+      "provider": "Backupify",
+      "provider_slug": "backupify"
+    },
+    {
+      "name": "Seat",
+      "description": "A backup seat (user, mailbox, site, or team)",
+      "category": "core",
+      "provider": "Backupify",
+      "provider_slug": "backupify"
+    },
+    {
+      "name": "Package",
+      "description": "A Ballerina package in the Central registry",
+      "category": "core",
+      "provider": "Ballerina",
+      "provider_slug": "ballerina"
+    },
+    {
       "name": "Call",
       "description": "A voice call object with state, direction, and metadata",
       "category": "core",
@@ -64564,6 +67291,181 @@
       "category": "core",
       "provider": "Bandwidth",
       "provider_slug": "bandwidth"
+    },
+    {
+      "name": "Account",
+      "description": "A CashPro bank account",
+      "category": "core",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america"
+    },
+    {
+      "name": "Balance",
+      "description": "Account balance information",
+      "category": "core",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america"
+    },
+    {
+      "name": "Transaction",
+      "description": "An account transaction record",
+      "category": "core",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america"
+    },
+    {
+      "name": "PaymentRequest",
+      "description": "Payment initiation request",
+      "category": "core",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america"
+    },
+    {
+      "name": "PaymentResponse",
+      "description": "Payment transaction result",
+      "category": "core",
+      "provider": "Bank of America",
+      "provider_slug": "bank-of-america"
+    },
+    {
+      "name": "Case",
+      "description": "A US bankruptcy court case",
+      "category": "core",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch"
+    },
+    {
+      "name": "Claim",
+      "description": "A claim in the bankruptcy claims register",
+      "category": "core",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch"
+    },
+    {
+      "name": "Monitor",
+      "description": "An automated bankruptcy monitoring alert",
+      "category": "core",
+      "provider": "BankruptcyWatch",
+      "provider_slug": "bankruptcywatch"
+    },
+    {
+      "name": "Card",
+      "description": "A Hearthstone card with stats, image URLs, and metadata",
+      "category": "core",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net"
+    },
+    {
+      "name": "CardBack",
+      "description": "A Hearthstone card back cosmetic item",
+      "category": "core",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net"
+    },
+    {
+      "name": "Deck",
+      "description": "A Hearthstone deck with card list and class",
+      "category": "core",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net"
+    },
+    {
+      "name": "Metadata",
+      "description": "Hearthstone reference data for sets, classes, types, rarities",
+      "category": "core",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net"
+    },
+    {
+      "name": "MetadataItem",
+      "description": "A single metadata reference item with id, name, and slug",
+      "category": "core",
+      "provider": "Battle.net",
+      "provider_slug": "battle-net"
+    },
+    {
+      "name": "Product",
+      "description": "A Best Buy product with pricing, availability, and metadata",
+      "category": "core",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy"
+    },
+    {
+      "name": "Store",
+      "description": "A Best Buy store location with operational details",
+      "category": "core",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy"
+    },
+    {
+      "name": "RecommendedProduct",
+      "description": "A recommended product with display attributes",
+      "category": "core",
+      "provider": "Best Buy",
+      "provider_slug": "best-buy"
+    },
+    {
+      "name": "WalletTransactionResponse",
+      "description": "Response for wallet deposit or withdrawal operations",
+      "category": "core",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions"
+    },
+    {
+      "name": "BalanceResponse",
+      "description": "Player wallet balance response",
+      "category": "core",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions"
+    },
+    {
+      "name": "PlayerInfoResponse",
+      "description": "Player profile and account information",
+      "category": "core",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions"
+    },
+    {
+      "name": "Game",
+      "description": "Casino game with product metadata",
+      "category": "core",
+      "provider": "BetSolutions",
+      "provider_slug": "betsolutions"
+    },
+    {
+      "name": "MonitorAttributes",
+      "description": "Uptime monitor configuration and current status",
+      "category": "core",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack"
+    },
+    {
+      "name": "HeartbeatAttributes",
+      "description": "Heartbeat monitor configuration and status",
+      "category": "core",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack"
+    },
+    {
+      "name": "IncidentAttributes",
+      "description": "Incident details including cause and timeline",
+      "category": "core",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack"
+    },
+    {
+      "name": "StatusPageAttributes",
+      "description": "Status page branding and configuration",
+      "category": "core",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack"
+    },
+    {
+      "name": "PolicyAttributes",
+      "description": "Escalation policy steps and repeat configuration",
+      "category": "core",
+      "provider": "Better Stack",
+      "provider_slug": "better-stack"
     },
     {
       "name": "User",
@@ -64599,6 +67501,111 @@
       "category": "core",
       "provider": "BetterCloud",
       "provider_slug": "bettercloud"
+    },
+    {
+      "name": "Request",
+      "description": "",
+      "category": "core",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust"
+    },
+    {
+      "name": "ManagedAccount",
+      "description": "",
+      "category": "core",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust"
+    },
+    {
+      "name": "ManagedSystem",
+      "description": "",
+      "category": "core",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust"
+    },
+    {
+      "name": "Secret",
+      "description": "",
+      "category": "core",
+      "provider": "BeyondTrust",
+      "provider_slug": "beyondtrust"
+    },
+    {
+      "name": "MonitorCategoriesResponse",
+      "description": "",
+      "category": "core",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe"
+    },
+    {
+      "name": "MonitorMetricsResponse",
+      "description": "",
+      "category": "core",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe"
+    },
+    {
+      "name": "ReloadEntry",
+      "description": "",
+      "category": "core",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe"
+    },
+    {
+      "name": "ReloadResponse",
+      "description": "",
+      "category": "core",
+      "provider": "BFE (Beyond Front End)",
+      "provider_slug": "bfe"
+    },
+    {
+      "name": "ChatCompletionRequest",
+      "description": "",
+      "category": "core",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost"
+    },
+    {
+      "name": "ChatCompletionResponse",
+      "description": "",
+      "category": "core",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost"
+    },
+    {
+      "name": "ChatMessage",
+      "description": "",
+      "category": "core",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost"
+    },
+    {
+      "name": "ChatChoice",
+      "description": "",
+      "category": "core",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost"
+    },
+    {
+      "name": "UsageStats",
+      "description": "",
+      "category": "core",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost"
+    },
+    {
+      "name": "HealthResponse",
+      "description": "",
+      "category": "core",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost"
+    },
+    {
+      "name": "ProviderStatus",
+      "description": "",
+      "category": "core",
+      "provider": "Bifrost",
+      "provider_slug": "bifrost"
     },
     {
       "name": "Product",
@@ -64692,6 +67699,83 @@
       "provider_slug": "bigpanda"
     },
     {
+      "name": "Order",
+      "description": "",
+      "category": "core",
+      "provider": "Binance",
+      "provider_slug": "binance"
+    },
+    {
+      "name": "Account",
+      "description": "",
+      "category": "core",
+      "provider": "Binance",
+      "provider_slug": "binance"
+    },
+    {
+      "name": "Trade",
+      "description": "",
+      "category": "core",
+      "provider": "Binance",
+      "provider_slug": "binance"
+    },
+    {
+      "name": "Employee",
+      "description": "",
+      "category": "core",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee"
+    },
+    {
+      "name": "Department",
+      "description": "",
+      "category": "core",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee"
+    },
+    {
+      "name": "TimeOffRequest",
+      "description": "",
+      "category": "core",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee"
+    },
+    {
+      "name": "Job",
+      "description": "",
+      "category": "core",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee"
+    },
+    {
+      "name": "Candidate",
+      "description": "",
+      "category": "core",
+      "provider": "Bindbee",
+      "provider_slug": "bindbee"
+    },
+    {
+      "name": "Service",
+      "description": "",
+      "category": "core",
+      "provider": "Biogen",
+      "provider_slug": "biogen"
+    },
+    {
+      "name": "ApiKey",
+      "description": "",
+      "category": "core",
+      "provider": "Biogen",
+      "provider_slug": "biogen"
+    },
+    {
+      "name": "ApiKeyUsage",
+      "description": "",
+      "category": "core",
+      "provider": "Biogen",
+      "provider_slug": "biogen"
+    },
+    {
       "name": "Repository",
       "description": "A Git repository",
       "category": "core",
@@ -64746,6 +67830,125 @@
       "category": "infrastructure",
       "provider": "Bitbucket",
       "provider_slug": "bitbucket"
+    },
+    {
+      "name": "CompanySearchRequest",
+      "description": "Request payload for company search containing name, address, phone, and URL filters",
+      "category": "core",
+      "provider": "BizAPI",
+      "provider_slug": "bizapi"
+    },
+    {
+      "name": "CompanySearchResponse",
+      "description": "Firmographic response record with identification, address, contact, financial, and hierarchy fields",
+      "category": "core",
+      "provider": "BizAPI",
+      "provider_slug": "bizapi"
+    },
+    {
+      "name": "Route",
+      "description": "Coach route between origin and destination stations",
+      "category": "core",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api"
+    },
+    {
+      "name": "Trip",
+      "description": "Specific departure with pricing and seat availability",
+      "category": "core",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api"
+    },
+    {
+      "name": "Booking",
+      "description": "Confirmed reservation for passengers",
+      "category": "core",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api"
+    },
+    {
+      "name": "Ticket",
+      "description": "Electronic ticket with QR code for passenger validation",
+      "category": "core",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api"
+    },
+    {
+      "name": "Station",
+      "description": "Coach station with location and address",
+      "category": "core",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api"
+    },
+    {
+      "name": "Passenger",
+      "description": "Passenger details for booking",
+      "category": "core",
+      "provider": "BlaBlaCar Bus API",
+      "provider_slug": "blablacar-bus-api"
+    },
+    {
+      "name": "Product",
+      "description": "Software product with catalog attributes, features, and add-ons",
+      "category": "core",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully"
+    },
+    {
+      "name": "Vendor",
+      "description": "Software vendor in the Vendr catalog",
+      "category": "core",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully"
+    },
+    {
+      "name": "PricingResponse",
+      "description": "Fair price prediction and negotiation guidance",
+      "category": "core",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully"
+    },
+    {
+      "name": "Webhook",
+      "description": "Event webhook subscription",
+      "category": "core",
+      "provider": "Blissfully (Vendr)",
+      "provider_slug": "blissfully"
+    },
+    {
+      "name": "block_content",
+      "description": "Cardano block with hash, slot, epoch, and transaction data",
+      "category": "core",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost"
+    },
+    {
+      "name": "transaction",
+      "description": "Cardano transaction with inputs, outputs, and metadata",
+      "category": "core",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost"
+    },
+    {
+      "name": "account",
+      "description": "Cardano stake account with rewards and delegation",
+      "category": "core",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost"
+    },
+    {
+      "name": "address",
+      "description": "Cardano address with balance and UTXOs",
+      "category": "core",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost"
+    },
+    {
+      "name": "asset",
+      "description": "Cardano native asset with policy and supply",
+      "category": "core",
+      "provider": "Blockfrost",
+      "provider_slug": "blockfrost"
     },
     {
       "name": "POSRecord",
@@ -67766,11 +70969,11 @@
     "warehouse"
   ],
   "stats": {
-    "providers": 638,
-    "resources": 2796,
-    "actions": 372,
-    "personas": 1042,
-    "domains": 877,
-    "schemas": 1348
+    "providers": 683,
+    "resources": 2901,
+    "actions": 392,
+    "personas": 1105,
+    "domains": 939,
+    "schemas": 1422
   }
 }
