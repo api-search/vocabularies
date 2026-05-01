@@ -31665,6 +31665,53 @@
       ]
     },
     {
+      "name": "experiments",
+      "description": "A/B test experiments (sunset).",
+      "provider": "Google Optimize",
+      "provider_slug": "google-optimize",
+      "actions": [
+        "create",
+        "get",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "variants",
+      "description": "Test page variants (sunset).",
+      "provider": "Google Optimize",
+      "provider_slug": "google-optimize",
+      "actions": [
+        "create",
+        "get",
+        "update"
+      ],
+      "apis": []
+    },
+    {
+      "name": "objectives",
+      "description": "Experiment goals and metrics (sunset).",
+      "provider": "Google Optimize",
+      "provider_slug": "google-optimize",
+      "actions": [
+        "get",
+        "set"
+      ],
+      "apis": []
+    },
+    {
+      "name": "audiences",
+      "description": "Targeting audience segments (sunset).",
+      "provider": "Google Optimize",
+      "provider_slug": "google-optimize",
+      "actions": [
+        "get",
+        "set"
+      ],
+      "apis": []
+    },
+    {
       "name": "media",
       "description": "Photos, videos, stories, reels, carousels, and albums.",
       "provider": "Instagram",
@@ -49937,6 +49984,30 @@
       ]
     },
     {
+      "id": "marketing-manager",
+      "name": "Marketing Manager",
+      "description": "",
+      "provider": "Google Optimize",
+      "provider_slug": "google-optimize",
+      "workflows": []
+    },
+    {
+      "id": "web-developer",
+      "name": "Web Developer",
+      "description": "",
+      "provider": "Google Optimize",
+      "provider_slug": "google-optimize",
+      "workflows": []
+    },
+    {
+      "id": "cro-specialist",
+      "name": "CRO Specialist",
+      "description": "",
+      "provider": "Google Optimize",
+      "provider_slug": "google-optimize",
+      "workflows": []
+    },
+    {
       "id": "social-media-manager",
       "name": "Social Media Manager",
       "description": "Publishes and manages content across Instagram accounts.",
@@ -58519,6 +58590,26 @@
       "resources": [
         "forms",
         "watches"
+      ]
+    },
+    {
+      "name": "experimentation",
+      "description": "",
+      "provider": "Google Optimize",
+      "provider_slug": "google-optimize",
+      "resources": [
+        "experiments",
+        "variants"
+      ]
+    },
+    {
+      "name": "targeting",
+      "description": "",
+      "provider": "Google Optimize",
+      "provider_slug": "google-optimize",
+      "resources": [
+        "objectives",
+        "audiences"
       ]
     },
     {
@@ -70969,11 +71060,11 @@
     "warehouse"
   ],
   "stats": {
-    "providers": 683,
-    "resources": 2901,
+    "providers": 685,
+    "resources": 2905,
     "actions": 392,
-    "personas": 1105,
-    "domains": 939,
+    "personas": 1108,
+    "domains": 941,
     "schemas": 1422
   }
 }
