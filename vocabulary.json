@@ -32328,6 +32328,46 @@
       "apis": []
     },
     {
+      "name": "entities",
+      "description": ".NET classes mapped to database tables.",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "dbcontext",
+      "description": "Database session and unit of work.",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "migrations",
+      "description": "Schema version control and evolution.",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "queries",
+      "description": "LINQ and raw SQL query execution.",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "providers",
+      "description": "Database provider plugins.",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "actions": [],
+      "apis": []
+    },
+    {
       "name": "Worksheets",
       "description": "",
       "provider": "Microsoft Excel",
@@ -50210,6 +50250,30 @@
       ]
     },
     {
+      "id": "dotnet-developer",
+      "name": ".NET Developer",
+      "description": "",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "workflows": []
+    },
+    {
+      "id": "database-developer",
+      "name": "Database Developer",
+      "description": "",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "workflows": []
+    },
+    {
+      "id": "architect",
+      "name": "Software Architect",
+      "description": "",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "workflows": []
+    },
+    {
       "id": "data-analyst",
       "name": "Data Analyst",
       "description": "Analysts working with Excel workbooks for data processing.",
@@ -58833,6 +58897,35 @@
         "products",
         "submissions",
         "packages"
+      ]
+    },
+    {
+      "name": "data-access",
+      "description": "",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "resources": [
+        "entities",
+        "dbcontext",
+        "queries"
+      ]
+    },
+    {
+      "name": "schema-management",
+      "description": "",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "resources": [
+        "migrations"
+      ]
+    },
+    {
+      "name": "database-connectivity",
+      "description": "",
+      "provider": "Microsoft Entity Framework",
+      "provider_slug": "microsoft-entity-framework",
+      "resources": [
+        "providers"
       ]
     },
     {
@@ -71060,11 +71153,11 @@
     "warehouse"
   ],
   "stats": {
-    "providers": 685,
-    "resources": 2905,
+    "providers": 691,
+    "resources": 2910,
     "actions": 392,
-    "personas": 1108,
-    "domains": 941,
+    "personas": 1111,
+    "domains": 944,
     "schemas": 1422
   }
 }
