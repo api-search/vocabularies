@@ -34858,6 +34858,54 @@
       "apis": []
     },
     {
+      "name": "quotes",
+      "description": "Request for quote (RFQ) submissions and responses.",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "trades",
+      "description": "Executed trades and trade confirmations.",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "orders",
+      "description": "Trade orders and execution instructions.",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "prices",
+      "description": "Real-time and historical pricing data.",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "instruments",
+      "description": "Financial instrument reference data.",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "reports",
+      "description": "Trade reports for regulatory transparency.",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "actions": [],
+      "apis": []
+    },
+    {
       "name": "posts",
       "description": "Posts (formerly tweets) \u2014 the core content unit on X including text, media, polls, and cards.",
       "provider": "X (Twitter)",
@@ -50938,6 +50986,46 @@
       ]
     },
     {
+      "id": "trader",
+      "name": "Institutional Trader",
+      "description": "",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "workflows": []
+    },
+    {
+      "id": "quant",
+      "name": "Quantitative Analyst",
+      "description": "",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "workflows": []
+    },
+    {
+      "id": "portfolio-manager",
+      "name": "Portfolio Manager",
+      "description": "",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "workflows": []
+    },
+    {
+      "id": "compliance-officer",
+      "name": "Compliance Officer",
+      "description": "",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "workflows": []
+    },
+    {
+      "id": "integration-developer",
+      "name": "Integration Developer",
+      "description": "",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "workflows": []
+    },
+    {
       "id": "social-media-manager",
       "name": "Social Media Manager",
       "description": "Creates, schedules, and analyzes social media content across platforms.",
@@ -59551,6 +59639,36 @@
       "resources": [
         "Sessions",
         "Queries"
+      ]
+    },
+    {
+      "name": "execution",
+      "description": "",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "resources": [
+        "quotes",
+        "trades",
+        "orders"
+      ]
+    },
+    {
+      "name": "market-data",
+      "description": "",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "resources": [
+        "prices",
+        "instruments"
+      ]
+    },
+    {
+      "name": "reporting",
+      "description": "",
+      "provider": "Tradeweb",
+      "provider_slug": "tradeweb",
+      "resources": [
+        "reports"
       ]
     },
     {
@@ -71153,11 +71271,11 @@
     "warehouse"
   ],
   "stats": {
-    "providers": 691,
-    "resources": 2910,
+    "providers": 693,
+    "resources": 2916,
     "actions": 392,
-    "personas": 1111,
-    "domains": 944,
+    "personas": 1116,
+    "domains": 947,
     "schemas": 1422
   }
 }
