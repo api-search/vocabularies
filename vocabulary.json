@@ -18006,6 +18006,136 @@
       ]
     },
     {
+      "name": "Warehouse Shipping Order",
+      "description": "A 940 transaction set instructing an Americold facility to make, modify, or cancel a shipment of temperature-controlled product on behalf of a depositor.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "send",
+        "receive",
+        "modify",
+        "cancel"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Warehouse Shipping Advice",
+      "description": "A 945 transaction set returned by an Americold facility confirming a shipment was made, with as-shipped quantities, lot detail, and load temperature.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "send",
+        "reconcile"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Warehouse Stock Transfer Shipment Advice",
+      "description": "A 943 transaction set advising a receiving Americold facility that a stock transfer is in transit from another facility or supplier.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "send",
+        "receive"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Warehouse Stock Transfer Receipt Advice",
+      "description": "A 944 transaction set confirming receipt of a transferred stock at the destination Americold facility.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "send",
+        "confirm"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Warehouse Inventory Adjustment Advice",
+      "description": "A 947 transaction set communicating inventory adjustments (count differences, damage, expiration) between Americold and the depositor.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "send",
+        "reconcile"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Inventory Snapshot",
+      "description": "An i-3PL point-in-time view of on-hand, available, committed, and held inventory by lot across one or more Americold facilities.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "view",
+        "export",
+        "monitor"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Order",
+      "description": "A customer order in i-3PL for product to be picked, staged, and shipped from an Americold cold storage facility.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "create",
+        "modify",
+        "cancel",
+        "track"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Appointment",
+      "description": "A scheduled dock appointment for a carrier to pick up or deliver product at an Americold facility.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "book",
+        "modify",
+        "cancel"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Report",
+      "description": "One of 40+ customizable i-3PL reports covering throughput, KPIs, inventory turns, and facility performance.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "run",
+        "schedule",
+        "export"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Alert",
+      "description": "An i-3PL event notification for inventory thresholds, temperature excursions, order status, or facility events.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "configure",
+        "receive",
+        "acknowledge"
+      ],
+      "apis": []
+    },
+    {
+      "name": "Lot",
+      "description": "A traceable batch of product (manufacture, expiration, hold status) tracked at item-lot granularity within Americold facilities.",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "actions": [
+        "trace",
+        "hold",
+        "release"
+      ],
+      "apis": []
+    },
+    {
       "name": "charts",
       "description": "Saved cost analysis charts created in the Amnic Cost Analyzer.",
       "provider": "Amnic",
@@ -32677,6 +32807,229 @@
       "apis": []
     },
     {
+      "name": "device",
+      "description": "A physical Roku streaming device on the local network.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "query",
+        "key-press",
+        "key-down",
+        "key-up",
+        "input",
+        "get-root"
+      ],
+      "apis": []
+    },
+    {
+      "name": "app",
+      "description": "An installed Roku channel.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "list",
+        "get-active",
+        "get-icon",
+        "launch",
+        "install",
+        "exit"
+      ],
+      "apis": []
+    },
+    {
+      "name": "media-player",
+      "description": "The active video player on the device.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "query"
+      ],
+      "apis": []
+    },
+    {
+      "name": "tv-channel",
+      "description": "Tuned TV channel on Roku TV devices.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "list",
+        "get-active"
+      ],
+      "apis": []
+    },
+    {
+      "name": "diagnostics",
+      "description": "Developer-mode diagnostic resources.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "query-chanperf",
+        "query-r2d2-bitmaps",
+        "query-sgnodes",
+        "query-registry",
+        "query-app-state"
+      ],
+      "apis": []
+    },
+    {
+      "name": "transaction",
+      "description": "A Roku Pay purchase transaction.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "validate"
+      ],
+      "apis": []
+    },
+    {
+      "name": "refund",
+      "description": "A Roku Pay refund record.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "validate"
+      ],
+      "apis": []
+    },
+    {
+      "name": "subscription",
+      "description": "A recurring Roku Pay subscription.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "cancel",
+        "refund",
+        "update-bill-cycle"
+      ],
+      "apis": []
+    },
+    {
+      "name": "service-credit",
+      "description": "An account-level credit issued to a customer.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "issue"
+      ],
+      "apis": []
+    },
+    {
+      "name": "user",
+      "description": "An authenticated Nabu Cloud user (channel team member).",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "get",
+        "list-organisations",
+        "list-projects",
+        "list-groups"
+      ],
+      "apis": []
+    },
+    {
+      "name": "personal-access-token",
+      "description": "Personal access token for Nabu Cloud API access.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "list",
+        "create",
+        "revoke",
+        "refresh",
+        "list-scopes"
+      ],
+      "apis": []
+    },
+    {
+      "name": "organisation",
+      "description": "Top-level Nabu Cloud tenant.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "list",
+        "get",
+        "list-members",
+        "list-regions",
+        "list-roles"
+      ],
+      "apis": []
+    },
+    {
+      "name": "group",
+      "description": "Permission group within an organisation.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "list",
+        "get",
+        "create",
+        "update",
+        "delete",
+        "add-member",
+        "remove-member"
+      ],
+      "apis": []
+    },
+    {
+      "name": "project",
+      "description": "A channel testing project.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "list",
+        "get",
+        "create",
+        "update",
+        "delete",
+        "list-groups",
+        "list-members"
+      ],
+      "apis": []
+    },
+    {
+      "name": "test-device",
+      "description": "A remote Roku test device managed by Nabu Cloud.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "list",
+        "get",
+        "create",
+        "update",
+        "delete",
+        "start",
+        "stop",
+        "list-runs",
+        "read-logs"
+      ],
+      "apis": []
+    },
+    {
+      "name": "snapshot",
+      "description": "A snapshot of a test device's state.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "list",
+        "get",
+        "create",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "build",
+      "description": "A channel build artifact in Nabu Cloud.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "actions": [
+        "list",
+        "get"
+      ],
+      "apis": []
+    },
+    {
       "name": "SObjects",
       "description": "",
       "provider": "Salesforce Automation",
@@ -37714,6 +38067,7 @@
         "Oracle Cloud Infrastructure",
         "Oracle Integration",
         "Palo Alto Networks",
+        "Roku",
         "Teradata",
         "TM Forum",
         "Toast",
@@ -37987,6 +38341,7 @@
         "Oracle Cloud Infrastructure",
         "Oracle Integration",
         "Palo Alto Networks",
+        "Roku",
         "Salesforce Automation",
         "Teradata",
         "TM Forum",
@@ -38276,6 +38631,7 @@
         "Oracle Cloud Infrastructure",
         "Oracle Integration",
         "Palo Alto Networks",
+        "Roku",
         "Salesforce Automation",
         "Teradata",
         "TM Forum",
@@ -38486,6 +38842,7 @@
         "Oracle Cloud Infrastructure",
         "Oracle Integration",
         "Palo Alto Networks",
+        "Roku",
         "Salesforce Automation",
         "TM Forum",
         "Toast",
@@ -38730,6 +39087,7 @@
         "Oracle Cloud Infrastructure",
         "Oracle Integration",
         "Palo Alto Networks",
+        "Roku",
         "Salesforce Automation",
         "Teradata",
         "TM Forum",
@@ -38763,6 +39121,7 @@
         "Backstage",
         "Google Analytics",
         "Palo Alto Networks",
+        "Roku",
         "Salesforce Automation",
         "U.S. Geological Survey",
         "U.S. Treasury Bureau of the Fiscal Service",
@@ -38930,6 +39289,7 @@
         "Argo CD",
         "Backstage",
         "Google Analytics",
+        "Roku",
         "TODO Group",
         "UiPath",
         "United States Postal Service",
@@ -39056,6 +39416,7 @@
         "Amazon Private CA",
         "Amazon PrivateLink",
         "Amazon Proton",
+        "Americold Realty Trust",
         "Amplitude",
         "AmTrust Financial Services",
         "ukg",
@@ -39289,6 +39650,7 @@
         "Argo Workflows",
         "Bitbucket",
         "Oracle Cloud Infrastructure",
+        "Roku",
         "UiPath"
       ]
     },
@@ -39482,7 +39844,8 @@
       "pattern": "destructive",
       "description": "Return captured funds to the customer.",
       "providers": [
-        "Affirm"
+        "Affirm",
+        "Roku"
       ]
     },
     {
@@ -39733,6 +40096,7 @@
         "Binance",
         "BlaBlaCar Bus API",
         "Microsoft Power Automate",
+        "Roku",
         "Teradata",
         "TM Forum",
         "United States Postal Service",
@@ -39784,7 +40148,8 @@
       "pattern": "write",
       "description": "Issue a new insurance policy",
       "providers": [
-        "AIG"
+        "AIG",
+        "Roku"
       ]
     },
     {
@@ -40091,6 +40456,7 @@
         "AWS App Runner",
         "Backblaze",
         "Oracle Cloud Infrastructure",
+        "Roku",
         "UiPath",
         "Youki"
       ]
@@ -40407,7 +40773,8 @@
       "pattern": "write",
       "description": "",
       "providers": [
-        "Amazon EC2 Auto Scaling"
+        "Amazon EC2 Auto Scaling",
+        "Roku"
       ]
     },
     {
@@ -40967,6 +41334,7 @@
       "providers": [
         "Ansible",
         "Ansible Playbooks",
+        "Roku",
         "Workday Studio"
       ]
     },
@@ -42692,6 +43060,15 @@
       "description": "Reopen a previously dismissed alert.",
       "providers": [
         "Palo Alto Networks"
+      ]
+    },
+    {
+      "name": "key-press",
+      "verb": "",
+      "pattern": "write",
+      "description": "",
+      "providers": [
+        "Roku"
       ]
     },
     {
@@ -48529,6 +48906,102 @@
       ]
     },
     {
+      "id": "supply-chain-planner",
+      "name": "Supply Chain Planner",
+      "description": "Depositor employee responsible for replenishment, demand planning, and balancing inventory across Americold facilities",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "workflows": [
+        "Cold Chain Outbound Fulfillment",
+        "Inventory Visibility",
+        "Stock Transfer Between Facilities"
+      ]
+    },
+    {
+      "id": "depositor-edi-analyst",
+      "name": "Depositor EDI Analyst",
+      "description": "Technical specialist on the depositor side managing 940/945/943/944/947 mappings and AS2 connectivity to Americold",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "workflows": [
+        "Cold Chain Outbound Fulfillment",
+        "Stock Transfer Between Facilities"
+      ]
+    },
+    {
+      "id": "inventory-manager",
+      "name": "Inventory Manager",
+      "description": "Depositor manager overseeing on-hand position, holds, expirations, and shrink across Americold facilities",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "workflows": [
+        "Inventory Visibility",
+        "Lot Traceability and Recall"
+      ]
+    },
+    {
+      "id": "carrier-dispatch",
+      "name": "Carrier Dispatch",
+      "description": "Carrier dispatcher booking pickup and delivery appointments at Americold dock doors",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "workflows": [
+        "Dock Appointment Scheduling"
+      ]
+    },
+    {
+      "id": "depositor-logistics",
+      "name": "Depositor Logistics",
+      "description": "Depositor transportation team coordinating outbound moves and dock appointments",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "workflows": [
+        "Dock Appointment Scheduling",
+        "Cold Chain Outbound Fulfillment"
+      ]
+    },
+    {
+      "id": "depositor-customer-service",
+      "name": "Depositor Customer Service",
+      "description": "Depositor team handling order status inquiries from end customers and retailers",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "workflows": [
+        "Inventory Visibility"
+      ]
+    },
+    {
+      "id": "quality-assurance",
+      "name": "Quality Assurance",
+      "description": "Depositor QA team managing holds, releases, and recalls at lot granularity",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "workflows": [
+        "Lot Traceability and Recall"
+      ]
+    },
+    {
+      "id": "food-safety-officer",
+      "name": "Food Safety Officer",
+      "description": "Regulated-food employee responsible for FSMA, HACCP, and recall readiness using lot-level traceability",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "workflows": [
+        "Lot Traceability and Recall"
+      ]
+    },
+    {
+      "id": "americold-operations",
+      "name": "Americold Operations",
+      "description": "Americold facility operations team executing shipping, receiving, and stock transfers",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "workflows": [
+        "Cold Chain Outbound Fulfillment",
+        "Stock Transfer Between Facilities"
+      ]
+    },
+    {
       "id": "finops-practitioner",
       "name": "FinOps Practitioner",
       "description": "Cloud cost management specialist responsible for cost visibility, optimization, and governance across cloud environments.",
@@ -53056,6 +53529,36 @@
       "provider": "Pluralsight",
       "provider_slug": "pluralsight",
       "workflows": []
+    },
+    {
+      "id": "channel-developer",
+      "name": "Channel Developer",
+      "description": "Builds and ships Roku channels. Uses ECP for local-device debugging and Nabu Cloud for builds and remote test devices.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "workflows": [
+        "Roku Channel Operations"
+      ]
+    },
+    {
+      "id": "qa-engineer",
+      "name": "QA Engineer",
+      "description": "Runs automated channel certification tests on remote Nabu Cloud devices and exercises the channel via ECP key injection.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "workflows": [
+        "Roku Channel Operations"
+      ]
+    },
+    {
+      "id": "billing-operator",
+      "name": "Billing Operator",
+      "description": "Validates Roku Pay transactions, processes refunds, manages subscriptions, and issues service credits.",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "workflows": [
+        "Roku Channel Operations"
+      ]
     },
     {
       "id": "salesforce-admin",
@@ -58768,6 +59271,41 @@
       ]
     },
     {
+      "name": "Cold Chain Logistics",
+      "description": "Temperature-controlled warehousing, transportation, and value-added services for perishable food and pharma",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "resources": []
+    },
+    {
+      "name": "Third-Party Logistics",
+      "description": "Outsourced logistics services where Americold operates fulfillment, inventory, and distribution on behalf of depositors",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "resources": []
+    },
+    {
+      "name": "Supply Chain Integration",
+      "description": "EDI and ERP integration connecting Americold's WMS, TMS, LMS, and WES with depositor systems for real-time data exchange",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "resources": []
+    },
+    {
+      "name": "Food Safety and Traceability",
+      "description": "Lot-level traceability, holds, recalls, and regulatory compliance (FSMA, HACCP) across the cold chain",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "resources": []
+    },
+    {
+      "name": "Real Estate",
+      "description": "Ownership and operation of one of the world's largest networks of cold storage warehouses across North America, Europe, Australia, New Zealand, and South America",
+      "provider": "Americold Realty Trust",
+      "provider_slug": "americold-realty-trust",
+      "resources": []
+    },
+    {
       "name": "Cloud Cost Management",
       "description": "Management and optimization of cloud infrastructure costs across AWS, GCP, Azure, and Kubernetes.",
       "provider": "Amnic",
@@ -62657,6 +63195,55 @@
         "commits",
         "pull-requests",
         "tickets"
+      ]
+    },
+    {
+      "name": "Device Control",
+      "description": "",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "resources": [
+        "device",
+        "app",
+        "media-player",
+        "tv-channel",
+        "diagnostics"
+      ]
+    },
+    {
+      "name": "Test Automation",
+      "description": "",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "resources": [
+        "test-device",
+        "snapshot",
+        "build",
+        "project"
+      ]
+    },
+    {
+      "name": "Monetization",
+      "description": "",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "resources": [
+        "transaction",
+        "refund",
+        "subscription",
+        "service-credit"
+      ]
+    },
+    {
+      "name": "Identity and Access",
+      "description": "",
+      "provider": "Roku",
+      "provider_slug": "roku",
+      "resources": [
+        "user",
+        "personal-access-token",
+        "organisation",
+        "group"
       ]
     },
     {
@@ -76764,11 +77351,11 @@
     "warehouse"
   ],
   "stats": {
-    "providers": 689,
-    "resources": 3149,
-    "actions": 492,
-    "personas": 1191,
-    "domains": 1025,
+    "providers": 691,
+    "resources": 3177,
+    "actions": 493,
+    "personas": 1203,
+    "domains": 1034,
     "schemas": 1584
   }
 }
