@@ -7675,6 +7675,62 @@
       "apis": []
     },
     {
+      "name": "Stories",
+      "description": "AI news stories curated and synthesized from monitored accounts",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Signals",
+      "description": "Early pattern detections with editorial badges",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Reports",
+      "description": "Trend deep-dives and longer-form analysis",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Bundles",
+      "description": "Curated groupings of related stories around themes",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Sections",
+      "description": "Topical sections used to organize stories",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "News Feed",
+      "description": "All current stories grouped by section",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Search",
+      "description": "Full-text search across stories, signals, and reports",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "actions": [],
+      "apis": []
+    },
+    {
       "name": "orders",
       "description": "",
       "provider": "Amazon",
@@ -22958,6 +23014,110 @@
       "apis": [
         "asf-whimsy"
       ]
+    },
+    {
+      "name": "QR Code",
+      "description": "Generate QR codes for arbitrary text or URLs",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Image Resize",
+      "description": "Resize and convert images across PNG, JPEG, WebP, AVIF",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Placeholder Image",
+      "description": "Generate SVG placeholder images for design and prototyping",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Screenshot",
+      "description": "Capture webpage screenshots",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "PDF Generation",
+      "description": "Render HTML content as PDF documents",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Markdown Rendering",
+      "description": "Convert Markdown content to HTML",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "URL Metadata",
+      "description": "Extract Open Graph and metadata for any URL",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Hashing",
+      "description": "Cryptographic hashing of arbitrary text",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "JWT Decode",
+      "description": "Decode JSON Web Tokens without verification",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Base64",
+      "description": "Base64 encoding and decoding with optional URL-safe alphabet",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "UUID Generation",
+      "description": "Generate UUIDs and unique IDs in multiple formats",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Color Conversion",
+      "description": "Convert color values across hex, RGB, and HSL formats",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
+    },
+    {
+      "name": "Lorem Ipsum",
+      "description": "Generate lorem ipsum placeholder text",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "actions": [],
+      "apis": []
     },
     {
       "name": "projects",
@@ -46548,6 +46708,46 @@
       ]
     },
     {
+      "id": "ai-agent-builder",
+      "name": "AI Agent Builder",
+      "description": "Engineer building AI agents that need real-time AI news context",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "workflows": [
+        "AI News Intelligence"
+      ]
+    },
+    {
+      "id": "research-analyst",
+      "name": "Research Analyst",
+      "description": "Analyst tracking AI industry trends, funding, and product launches",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "workflows": [
+        "AI News Intelligence"
+      ]
+    },
+    {
+      "id": "trader",
+      "name": "Trader",
+      "description": "Investor or trader using early signals to inform positions",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "workflows": [
+        "AI News Intelligence"
+      ]
+    },
+    {
+      "id": "news-publisher",
+      "name": "News Publisher",
+      "description": "Editorial team syndicating AI news into downstream products",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "workflows": [
+        "AI News Intelligence"
+      ]
+    },
+    {
       "id": "amazon-seller",
       "name": "Amazon Seller",
       "description": "Manages product listings, orders, and inventory on Amazon marketplace.",
@@ -50146,6 +50346,66 @@
       "provider": "apache-shiro",
       "provider_slug": "apache-shiro",
       "workflows": []
+    },
+    {
+      "id": "content-engineer",
+      "name": "Content Engineer",
+      "description": "Engineer building content publishing, link previews, and visual assets",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "workflows": [
+        "Content Generation"
+      ]
+    },
+    {
+      "id": "growth-engineer",
+      "name": "Growth Engineer",
+      "description": "Engineer building marketing assets, QR campaigns, and landing-page automation",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "workflows": [
+        "Content Generation"
+      ]
+    },
+    {
+      "id": "cms-integrator",
+      "name": "CMS Integrator",
+      "description": "Developer integrating Markdown rendering, PDF generation, and screenshots into a CMS",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "workflows": [
+        "Content Generation"
+      ]
+    },
+    {
+      "id": "backend-engineer",
+      "name": "Backend Engineer",
+      "description": "Engineer building application services that need IDs, hashing, and encoding utilities",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "workflows": [
+        "Developer Utilities"
+      ]
+    },
+    {
+      "id": "platform-engineer",
+      "name": "Platform Engineer",
+      "description": "Engineer centralizing developer primitives across services",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "workflows": [
+        "Developer Utilities"
+      ]
+    },
+    {
+      "id": "developer-tools-builder",
+      "name": "Developer Tools Builder",
+      "description": "Engineer integrating utility primitives into IDE, CLI, or admin tooling",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "workflows": [
+        "Developer Utilities"
+      ]
     },
     {
       "id": "api-developer",
@@ -57822,6 +58082,45 @@
       ]
     },
     {
+      "name": "News",
+      "description": "Real-time AI news stories and section-level feeds",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "resources": [
+        "stories",
+        "news-feed"
+      ]
+    },
+    {
+      "name": "Intelligence",
+      "description": "Early pattern detections and trend analysis",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "resources": [
+        "signals",
+        "reports"
+      ]
+    },
+    {
+      "name": "Curation",
+      "description": "Themed bundles and section taxonomy",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "resources": [
+        "bundles",
+        "sections"
+      ]
+    },
+    {
+      "name": "Discovery",
+      "description": "Cross-content full-text search",
+      "provider": "Aligned News",
+      "provider_slug": "aligned-news",
+      "resources": [
+        "search"
+      ]
+    },
+    {
       "name": "E-Commerce",
       "description": "Product listings, catalog, and order management",
       "provider": "Amazon",
@@ -59912,6 +60211,67 @@
       "provider": "apache-shiro",
       "provider_slug": "apache-shiro",
       "resources": []
+    },
+    {
+      "name": "Visual Content",
+      "description": "Generation of visual assets including QR codes, screenshots, resized images, and placeholders",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "resources": [
+        "qr-code",
+        "screenshot",
+        "image-resize",
+        "placeholder-image"
+      ]
+    },
+    {
+      "name": "Document Rendering",
+      "description": "Generation and conversion of structured documents",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "resources": [
+        "pdf-generation",
+        "markdown-rendering"
+      ]
+    },
+    {
+      "name": "Web Metadata",
+      "description": "Inspection and extraction of metadata from web URLs",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "resources": [
+        "url-metadata"
+      ]
+    },
+    {
+      "name": "Identifiers",
+      "description": "Generation of UUIDs and unique IDs",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "resources": [
+        "uuid-generation"
+      ]
+    },
+    {
+      "name": "Encoding and Hashing",
+      "description": "Cryptographic hashing, JWT inspection, and Base64 encoding",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "resources": [
+        "hashing",
+        "jwt-decode",
+        "base64"
+      ]
+    },
+    {
+      "name": "Design Utilities",
+      "description": "Color conversion and placeholder text for design and prototyping",
+      "provider": "API Snap",
+      "provider_slug": "api-snap",
+      "resources": [
+        "color-conversion",
+        "lorem-ipsum"
+      ]
     },
     {
       "name": "API Lifecycle",
@@ -77351,11 +77711,11 @@
     "warehouse"
   ],
   "stats": {
-    "providers": 691,
-    "resources": 3177,
+    "providers": 693,
+    "resources": 3197,
     "actions": 493,
-    "personas": 1203,
-    "domains": 1034,
+    "personas": 1213,
+    "domains": 1044,
     "schemas": 1584
   }
 }
