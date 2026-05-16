@@ -7855,6 +7855,100 @@
       "apis": []
     },
     {
+      "name": "user-pools",
+      "description": "Managed user directories for authentication.",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "actions": [
+        "create",
+        "describe",
+        "list",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "users",
+      "description": "Individual users within a user pool.",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "actions": [
+        "create",
+        "get",
+        "list",
+        "update",
+        "delete",
+        "disable",
+        "enable"
+      ],
+      "apis": []
+    },
+    {
+      "name": "user-pool-clients",
+      "description": "App clients associated with user pools.",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "actions": [
+        "create",
+        "describe",
+        "list",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "groups",
+      "description": "Groups of users within a user pool.",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "actions": [
+        "create",
+        "get",
+        "list",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "identity-pools",
+      "description": "Federated identity pools for AWS credential management.",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "actions": [
+        "create",
+        "describe",
+        "list",
+        "update",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "identities",
+      "description": "Individual federated identity entries.",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "actions": [
+        "get",
+        "list",
+        "delete"
+      ],
+      "apis": []
+    },
+    {
+      "name": "credentials",
+      "description": "Temporary AWS credentials for federated identities.",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "actions": [
+        "get"
+      ],
+      "apis": []
+    },
+    {
       "name": "instances",
       "description": "Amazon Connect contact center instances",
       "provider": "Amazon Connect",
@@ -38007,6 +38101,8 @@
         "Albertsons",
         "Alchemy",
         "Amazon",
+        "Amazon CloudFront",
+        "Amazon Cognito",
         "Amazon Connect",
         "Amazon Detective",
         "Amazon Device Farm",
@@ -38169,7 +38265,6 @@
         "Amazon API Gateway",
         "AWS App Mesh",
         "AWS App Runner",
-        "Amazon Cognito",
         "Microsoft Azure",
         "Azure Container Apps",
         "Azure Container Instances",
@@ -38313,6 +38408,8 @@
         "Albertsons",
         "Alchemy",
         "Amazon",
+        "Amazon CloudFront",
+        "Amazon Cognito",
         "Amazon Detective",
         "Amazon Device Farm",
         "Amazon DevOps Guru",
@@ -38443,7 +38540,6 @@
         "Availity",
         "Avalara",
         "Amazon API Gateway",
-        "Amazon Cognito",
         "Microsoft Azure",
         "Azure Container Apps",
         "Azure Container Instances",
@@ -38581,6 +38677,8 @@
         "Albertsons",
         "Alchemy",
         "Amazon",
+        "Amazon CloudFront",
+        "Amazon Cognito",
         "Amazon Connect",
         "Amazon Detective",
         "Amazon Device Farm",
@@ -38743,7 +38841,6 @@
         "Amazon API Gateway",
         "AWS App Mesh",
         "AWS App Runner",
-        "Amazon Cognito",
         "Microsoft Azure",
         "Azure Container Apps",
         "Azure Container Instances",
@@ -38849,6 +38946,7 @@
         "Alation",
         "Albato",
         "Amazon",
+        "Amazon Cognito",
         "Amazon Connect",
         "Amazon Detective",
         "Amazon Device Farm",
@@ -38967,7 +39065,6 @@
         "Avalara",
         "AWS App Mesh",
         "AWS App Runner",
-        "Amazon Cognito",
         "Microsoft Azure",
         "Azure Container Apps",
         "Azure Container Instances",
@@ -39067,6 +39164,8 @@
         "Alation",
         "Albato",
         "Amazon",
+        "Amazon CloudFront",
+        "Amazon Cognito",
         "Amazon Connect",
         "Amazon Detective",
         "Amazon Device Farm",
@@ -39208,7 +39307,6 @@
         "Amazon API Gateway",
         "AWS App Mesh",
         "AWS App Runner",
-        "Amazon Cognito",
         "Microsoft Azure",
         "Azure Container Apps",
         "Azure Container Instances",
@@ -40150,6 +40248,7 @@
       "description": "Get the schema and metadata for a tool",
       "providers": [
         "Agentic AI Foundation",
+        "Amazon Cognito",
         "Amazon Connect",
         "Amazon DevOps Guru",
         "Amazon Direct Connect",
@@ -40200,7 +40299,6 @@
         "Amazon WorkSpaces",
         "AWS App Mesh",
         "AWS App Runner",
-        "Amazon Cognito",
         "Salesforce Automation"
       ]
     },
@@ -40541,6 +40639,7 @@
       "description": "Activate an automation",
       "providers": [
         "Albato",
+        "Amazon Cognito",
         "Amazon Detective",
         "Amazon Directory Service",
         "Amazon EC2 Auto Scaling",
@@ -40555,6 +40654,7 @@
       "description": "Deactivate an automation",
       "providers": [
         "Albato",
+        "Amazon Cognito",
         "Amazon EC2 Auto Scaling",
         "Amazon Macie"
       ]
@@ -46775,6 +46875,36 @@
       "provider_slug": "amazon",
       "workflows": [
         "amazon-seller-and-commerce"
+      ]
+    },
+    {
+      "id": "platform-engineer",
+      "name": "Platform Engineer",
+      "description": "",
+      "provider": "Amazon CloudFront",
+      "provider_slug": "amazon-cloudfront",
+      "workflows": [
+        "Content Delivery Network Management"
+      ]
+    },
+    {
+      "id": "app-developer",
+      "name": "Application Developer",
+      "description": "Integrates Cognito authentication into web and mobile applications.",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "workflows": [
+        "user-authentication"
+      ]
+    },
+    {
+      "id": "platform-admin",
+      "name": "Platform Administrator",
+      "description": "Manages user pools, groups, and identity pool configurations.",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "workflows": [
+        "user-authentication"
       ]
     },
     {
@@ -58142,6 +58272,28 @@
       "resources": []
     },
     {
+      "name": "Authentication",
+      "description": "",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "resources": [
+        "user-pools",
+        "users",
+        "authentication"
+      ]
+    },
+    {
+      "name": "Federated Identity",
+      "description": "",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito",
+      "resources": [
+        "identity-pools",
+        "identities",
+        "credentials"
+      ]
+    },
+    {
       "name": "Instance Management",
       "description": "Configuration and lifecycle management of Amazon Connect instances",
       "provider": "Amazon Connect",
@@ -67397,6 +67549,41 @@
       "category": "core",
       "provider": "Amazon",
       "provider_slug": "amazon"
+    },
+    {
+      "name": "UserPoolType",
+      "description": "A user pool.",
+      "category": "core",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito"
+    },
+    {
+      "name": "UserType",
+      "description": "A user in a user pool.",
+      "category": "core",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito"
+    },
+    {
+      "name": "GroupType",
+      "description": "A user group in a pool.",
+      "category": "core",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito"
+    },
+    {
+      "name": "IdentityPoolShortDescription",
+      "description": "Summary of a Cognito identity pool.",
+      "category": "core",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito"
+    },
+    {
+      "name": "Credentials",
+      "description": "Temporary AWS credentials.",
+      "category": "core",
+      "provider": "Amazon Cognito",
+      "provider_slug": "amazon-cognito"
     },
     {
       "name": "Instance",
@@ -76963,6 +77150,7 @@
     "Low",
     "MAP Migration",
     "MBeans",
+    "MCP Proxy",
     "Machine Pools",
     "Macro",
     "Macros",
@@ -77711,11 +77899,11 @@
     "warehouse"
   ],
   "stats": {
-    "providers": 694,
-    "resources": 3197,
+    "providers": 697,
+    "resources": 3204,
     "actions": 493,
-    "personas": 1213,
-    "domains": 1044,
-    "schemas": 1584
+    "personas": 1216,
+    "domains": 1046,
+    "schemas": 1589
   }
 }
